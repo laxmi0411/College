@@ -123,13 +123,12 @@
         </span>
       </a>
       <nav class="hidden md:flex items-center gap-8 font-medium">
-        <a href="index.html" class="hover:text-brand-700">Home</a>
-        <a href="#agriculture-courses" class="hover:text-brand-700">Agriculture Courses</a>
-        <a href="#eligibility" class="hover:text-brand-700">Eligibility</a>
+        <!-- <a href="#agriculture-courses" class="hover:text-brand-700">Courses</a> -->
+        <a href="#eligibility" class="hover:text-brand-700">Courses</a>
         <a href="#top-colleges" class="hover:text-brand-700">Top Colleges</a>
         <a href="#process" class="hover:text-brand-700">Process</a>
-        <a href="#apply" id="openApply" class="hover:text-brand-700 cursor-pointer">Apply</a>
         <a href="#faq" class="hover:text-brand-700">FAQ</a>
+        <a href="#cta" class="hover:text-brand-700 cursor-pointer">Contact</a>
       </nav>
       <div class="flex items-center gap-3">
         <button id="openApplyBtn"
@@ -142,24 +141,38 @@
 
   <!-- Popup Modal -->
   <div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
-    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg p-6 relative">
-      <!-- Close Button -->
-      <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-red-600 text-2xl">&times;</button>
+    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg relative">
 
-      <h2 class="text-xl font-bold mb-4">Apply for Agriculture Admission</h2>
-      <form id="applyForm" class="space-y-4">
-        <input type="hidden" name="subject" value="New Agriculture Admission Lead" />
+      <div
+        class="bg-slate-50 w-full p-6 rounded-t-[2.5rem] border-b border-slate-100 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-black text-slate-900 ">Career Counseling 2026</h2>
+            <p class="text-[10px] text-blue-600 font-bold uppercase">Direct Admission Guidance</p>
+          </div>
+        </div>
+        <button id="closeModal"
+          class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center hover:bg-blue-600 hover:text-white justify-center text-slate-400 hover:text-red-500 transition-colors TEX">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <form id="applyForm" class="space-y-4 p-6 ">
+        <input type="hidden" name="subject" value="New agriculture Admission Lead" />
 
         <div>
           <label class="block text-sm font-medium">Full Name *</label>
-          <input name="name" required class="mt-1 w-full rounded-xl border p-2" placeholder="Prem Kumar" />
+          <input name="name" required class=" w-full rounded-xl border p-2" placeholder="Enter your full name" />
         </div>
 
         <div class="grid sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-sm font-medium">Phone *</label>
             <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2"
-              placeholder="8317795774" />
+              placeholder="Enter Your 10-digit Number" />
           </div>
           <div>
             <label class="block text-sm font-medium">Email</label>
@@ -175,14 +188,13 @@
           <div>
             <label class="block text-sm font-medium">Interested Course *</label>
             <select name="course" required class="mt-1 w-full rounded-xl border p-2">
-              <option>B.Sc Agriculture</option>
-              <option>B.Sc Horticulture</option>
-              <option>B.Sc Forestry</option>
-              <option>B.Tech Agricultural Engineering</option>
-              <option>B.Sc Food Technology</option>
-              <option>B.Sc Dairy Technology</option>
-              <option>M.Sc Agriculture</option>
-              <option>Diploma in Agriculture</option>
+              <option>B.Arch</option>
+              <option>M.Arch</option>
+              <option>B.Des Interior Design</option>
+              <option>B.Planning</option>
+              <option>B.Sc Landscape agriculture</option>
+              <option>B.Tech Architectural Engineering</option>
+              <option>Diploma in agriculture</option>
               <option>Other</option>
             </select>
           </div>
@@ -191,7 +203,7 @@
         <div>
           <label class="block text-sm font-medium">Message</label>
           <textarea name="message" rows="3" class="mt-1 w-full rounded-xl border p-2"
-            placeholder="Entrance score, budget, city preference…"></textarea>
+            placeholder="Intrested University / College, Entrance score, budget, city preference…"></textarea>
         </div>
 
         <div class="flex items-center gap-2 text-xs text-slate-600">
@@ -200,13 +212,11 @@
         </div>
 
         <button
-          class="mt-2 w-full px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Submit</button>
+          class="mt-2 w-full px-5 py-3 rounded-2xl bg-blue-600 text-white hover:bg-blue-700 shadow">Submit</button>
         <p id="formMsg" class="text-sm text-green-700 hidden">Thank you! We will contact you shortly.</p>
       </form>
     </div>
   </div>
-
-
 
 
   <!-- Hero -->
@@ -243,7 +253,7 @@
             <img class="slide object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
               src="../assete/agri.webp" alt="agriculture Students Model Discussion" />
 
-            <img class="slide absolute inset-0 object-cover w-full h-full opacity-0" src="../assete/agri1.webp"
+            <img class="slide absolute inset-0 object-cover w-full h-full opacity-0" src="../assete/agri_01.webp"
               alt="College Campus" />
           </div>
 
@@ -289,7 +299,8 @@
 
       <div class="mb-10 border-b border-slate-200 pb-8">
         <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Eligibility Criteria for Agriculture Courses</h2>
-        <p class="mt-2 text-slate-600">Minimum qualifications and requirements for admission to agriculture programs across India.</p>
+        <p class="mt-2 text-slate-600">Minimum qualifications and requirements for admission to agriculture programs
+          across India.</p>
       </div>
 
       <div class="grid lg:grid-cols-3 gap-6">
@@ -350,7 +361,8 @@
           <div class="space-y-5">
             <div class="group">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">B.Tech Agricultural Engineering</h4>
+                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">B.Tech Agricultural
+                  Engineering</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">4 YEARS</span>
               </div>
               <ul class="text-xs text-slate-500 leading-relaxed space-y-1">
@@ -363,7 +375,8 @@
 
             <div class="group">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">B.Sc Food Technology</h4>
+                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">B.Sc Food Technology
+                </h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">4 YEARS</span>
               </div>
               <ul class="text-xs text-slate-500 leading-relaxed space-y-1">
@@ -376,7 +389,8 @@
 
             <div class="group">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">B.Sc Dairy Technology</h4>
+                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">B.Sc Dairy
+                  Technology</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">4 YEARS</span>
               </div>
               <ul class="text-xs text-slate-500 leading-relaxed space-y-1">
@@ -467,69 +481,40 @@
 
 
   <!-- Top 50 Private Universities for agriculture -->
-  <section class="py-14 bg-slate-50">
+  <section class="py-12 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">Top 50 Private Universities for agriculture in India</h2>
-      <p class="mt-2 text-slate-600">Popular private universities offering agriculture programs (B.Arch, M.Arch,
-        Interior Design, etc.), based on reputation, placements, and facilities.</p>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <ol class="list-decimal list-inside space-y-2 text-sm text-slate-700">
-          <li>Lovely Professional University - Punjab</li>
-          <li>Chandigarh University - Punjab</li>
-          <li>Amity University - Uttar Pradesh</li>
-          <li>SRM University - Tamil Nadu</li>
-          <li>VIT University - Tamil Nadu</li>
-          <li>Jain University - Karnataka</li>
-          <li>Manipal University - Karnataka</li>
-          <li>Symbiosis International University - Maharashtra</li>
-          <li>Christ University - Karnataka</li>
-          <li>Shiv Nadar University - Uttar Pradesh</li>
-          <li>Bennett University - Uttar Pradesh</li>
-          <li>Galgotias University - Uttar Pradesh</li>
-          <li>Sharda University - Uttar Pradesh</li>
-          <li>Jaypee University - Uttar Pradesh</li>
-          <li>Noida International University - Uttar Pradesh</li>
-          <li>IIMT University - Uttar Pradesh</li>
-          <li>GLA University - Uttar Pradesh</li>
-          <li>Sanskriti University - Uttar Pradesh</li>
-          <li>Mangalayatan University - Uttar Pradesh</li>
-          <li>Rama University - Uttar Pradesh</li>
-          <li>Invertis University - Uttar Pradesh</li>
-          <li>Swami Vivekanand Subharti University - Uttar Pradesh</li>
-          <li>Teerthanker Mahaveer University - Uttar Pradesh</li>
-          <li>IFHE Hyderabad - Telangana</li>
-          <li>KL University - Andhra Pradesh</li>
-        </ol>
-        <ol start="26" class="list-decimal list-inside space-y-2 text-sm text-slate-700">
-          <li>Vignan University - Andhra Pradesh</li>
-          <li>GITAM University - Andhra Pradesh</li>
-          <li>SRM University - Andhra Pradesh</li>
-          <li>VIT-AP University - Andhra Pradesh</li>
-          <li>Centurion University - Odisha</li>
-          <li>KIIT University - Odisha</li>
-          <li>SOA University - Odisha</li>
-          <li>Xavier University - Odisha</li>
-          <li>CV Raman Global University - Odisha</li>
-          <li>Birla Institute of Technology - Jharkhand</li>
-          <li>ICFAI University - Jharkhand</li>
-          <li>Adamas University - West Bengal</li>
-          <li>Brainware University - West Bengal</li>
-          <li>Techno India University - West Bengal</li>
-          <li>University of Engineering & Management - West Bengal</li>
-          <li>JIS University - West Bengal</li>
-          <li>Amity University - West Bengal</li>
-          <li>Amity University - Bihar</li>
-          <li>K.K. University - Bihar</li>
-          <li>Alliance University - Karnataka</li>
-          <li>Presidency University - Karnataka</li>
-          <li>CMR University - Karnataka</li>
-          <li>PES University - Karnataka</li>
-          <li>REVA University - Karnataka</li>
-          <li>Dayananda Sagar University - Karnataka</li>
-        </ol>
+      <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
+
+        <!-- Left content -->
+        <div class="border-b pb-4">
+          <h2 class="text-2xl font-bold text-slate-900">
+            Top Private Engineering Universities in India
+            <span class="text-indigo-600 text-lg align-top font-bold">2026</span>
+          </h2>
+          <p class="text-sm text-slate-500 mt-1">
+            Quick-access list of leading private institutions for admissions.
+          </p>
+        </div>
+
+        <!-- Right button -->
+        <div class="shrink-0">
+          <button class="bg-indigo-600 text-white px-6 py-3 rounded-full font-bold
+             hover:bg-indigo-700 transition-all flex items-center gap-2
+             shadow-lg shadow-indigo-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 005.474 5.474l.772-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+            </svg>
+            Get Admission Guidance
+          </button>
+        </div>
+
       </div>
-      <p class="mt-6 text-sm text-slate-600">Note: Rankings are based on general popularity and may vary. Contact us for
-        detailed admission guidance.</p>
+
+      <div id="universityGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3">
+      </div>
+
+
     </div>
   </section>
 
@@ -539,7 +524,8 @@
 
       <div class="mb-10 border-b border-slate-200 pb-8">
         <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Agriculture Admission Process in India</h2>
-        <p class="mt-2 text-slate-600">Step-by-step guide to secure admission in top agriculture colleges across India.</p>
+        <p class="mt-2 text-slate-600">Step-by-step guide to secure admission in top agriculture colleges across India.
+        </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -548,56 +534,64 @@
             <span class="text-2xl font-bold text-green-600">1</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Research & Choose Course</h3>
-          <p class="text-sm text-slate-600">Select your preferred agriculture course (B.Sc Agriculture, B.Tech Agri Engineering, etc.) based on interests and career goals.</p>
+          <p class="text-sm text-slate-600">Select your preferred agriculture course (B.Sc Agriculture, B.Tech Agri
+            Engineering, etc.) based on interests and career goals.</p>
         </div>
         <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
           <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl font-bold text-green-600">2</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Check Eligibility</h3>
-          <p class="text-sm text-slate-600">Ensure you meet 10+2 requirements with PCB/PCM subjects and minimum marks. Prepare for entrance exams.</p>
+          <p class="text-sm text-slate-600">Ensure you meet 10+2 requirements with PCB/PCM subjects and minimum marks.
+            Prepare for entrance exams.</p>
         </div>
         <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
           <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl font-bold text-green-600">3</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Appear for Entrance Exams</h3>
-          <p class="text-sm text-slate-600">Take ICAR AIEEA, state CETs, or university-specific entrance exams. Prepare with mock tests and study materials.</p>
+          <p class="text-sm text-slate-600">Take ICAR AIEEA, state CETs, or university-specific entrance exams. Prepare
+            with mock tests and study materials.</p>
         </div>
         <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
           <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl font-bold text-green-600">4</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Apply & Counseling</h3>
-          <p class="text-sm text-slate-600">Submit applications to colleges. Attend counseling sessions for seat allotment based on merit/rank.</p>
+          <p class="text-sm text-slate-600">Submit applications to colleges. Attend counseling sessions for seat
+            allotment based on merit/rank.</p>
         </div>
         <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
           <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl font-bold text-green-600">5</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Document Verification</h3>
-          <p class="text-sm text-slate-600">Submit required documents: 10th/12th certificates, entrance scorecard, caste certificate, medical fitness.</p>
+          <p class="text-sm text-slate-600">Submit required documents: 10th/12th certificates, entrance scorecard, caste
+            certificate, medical fitness.</p>
         </div>
         <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
           <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl font-bold text-green-600">6</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Fee Payment & Admission</h3>
-          <p class="text-sm text-slate-600">Pay admission fees and complete enrollment. Check for scholarships and fee waiver options.</p>
+          <p class="text-sm text-slate-600">Pay admission fees and complete enrollment. Check for scholarships and fee
+            waiver options.</p>
         </div>
         <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
           <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl font-bold text-green-600">7</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Orientation & Classes</h3>
-          <p class="text-sm text-slate-600">Attend orientation program and start your agriculture education journey with field training.</p>
+          <p class="text-sm text-slate-600">Attend orientation program and start your agriculture education journey with
+            field training.</p>
         </div>
         <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
           <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl font-bold text-green-600">8</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Career Guidance</h3>
-          <p class="text-sm text-slate-600">Get ongoing support for internships, placements, and higher studies in agriculture sector.</p>
+          <p class="text-sm text-slate-600">Get ongoing support for internships, placements, and higher studies in
+            agriculture sector.</p>
         </div>
       </div>
 
@@ -606,19 +600,23 @@
         <div class="grid md:grid-cols-2 gap-6">
           <div>
             <h4 class="font-bold text-green-600 text-lg">ICAR AIEEA (All India Entrance Examination for Admission)</h4>
-            <p class="text-sm text-slate-600">For admission to B.Sc Agriculture programs across India. Conducted annually by ICAR.</p>
+            <p class="text-sm text-slate-600">For admission to B.Sc Agriculture programs across India. Conducted
+              annually by ICAR.</p>
           </div>
           <div>
             <h4 class="font-bold text-green-600 text-lg">State CETs</h4>
-            <p class="text-sm text-slate-600">State-specific entrance exams like MP PAT (Madhya Pradesh), CG PAT (Chhattisgarh), etc.</p>
+            <p class="text-sm text-slate-600">State-specific entrance exams like MP PAT (Madhya Pradesh), CG PAT
+              (Chhattisgarh), etc.</p>
           </div>
           <div>
             <h4 class="font-bold text-green-600 text-lg">University Entrance Exams</h4>
-            <p class="text-sm text-slate-600">University-specific exams for private institutions and state universities.</p>
+            <p class="text-sm text-slate-600">University-specific exams for private institutions and state universities.
+            </p>
           </div>
           <div>
             <h4 class="font-bold text-green-600 text-lg">JEE Main (for Agri Engineering)</h4>
-            <p class="text-sm text-slate-600">For B.Tech Agricultural Engineering programs in various states and institutions.</p>
+            <p class="text-sm text-slate-600">For B.Tech Agricultural Engineering programs in various states and
+              institutions.</p>
           </div>
         </div>
       </div>
@@ -629,26 +627,31 @@
   <section id="faq" class="py-14">
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold">Frequently Asked Questions</h2>
-      <p class="mt-2 text-slate-600">Common questions about agriculture admissions, courses, and career prospects.</p>
-      <div class="mt-6 space-y-4">
+      <p class="my-2 text-slate-600">Common questions about agriculture admissions, courses, and career prospects.</p>
+      <div class="grid md:grid-cols-2 gap-4">
         <div class="bg-white border rounded-2xl p-6 reveal">
           <h3 class="font-semibold text-lg text-brand-700">What is the eligibility for B.Sc Agriculture in India?</h3>
-          <p class="mt-2 text-slate-600">You need to have completed 10+2 with Physics, Chemistry, Biology/Mathematics with
+          <p class="mt-2 text-slate-600">You need to have completed 10+2 with Physics, Chemistry, Biology/Mathematics
+            with
             minimum 50-60% marks. Age should be between 17-23 years. PCB/PCM subjects are preferred.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
           <h3 class="font-semibold text-lg text-brand-700">Which entrance exam is required for agriculture courses?
           </h3>
-          <p class="mt-2 text-slate-600">ICAR AIEEA is the main entrance exam for B.Sc Agriculture programs. State CETs like MP PAT, CG PAT, etc., are required for state colleges. Some universities conduct their own entrance exams.</p>
+          <p class="mt-2 text-slate-600">ICAR AIEEA is the main entrance exam for B.Sc Agriculture programs. State CETs
+            like MP PAT, CG PAT, etc., are required for state colleges. Some universities conduct their own entrance
+            exams.</p>
         </div>
-        <div class="bg-white border rounded-2xl p-6 reveal">
+        <div class="bg-white border rounded-2xl p-6 reveal  ">
           <h3 class="font-semibold text-lg text-brand-700">Do you help with agriculture admission counseling?</h3>
           <p class="mt-2 text-slate-600">Yes, we provide free counseling for agriculture courses. Our experts help with
             college selection, entrance exam preparation, document verification, and admission process guidance.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
           <h3 class="font-semibold text-lg text-brand-700">What are the job opportunities after B.Sc Agriculture?</h3>
-          <p class="mt-2 text-slate-600">Graduates can work as Agricultural Officers, Farm Managers, Agronomists, Research Scientists, and in agribusiness companies. Higher studies options include M.Sc Agriculture and related fields.</p>
+          <p class="mt-2 text-slate-600">Graduates can work as Agricultural Officers, Farm Managers, Agronomists,
+            Research Scientists, and in agribusiness companies. Higher studies options include M.Sc Agriculture and
+            related fields.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
           <h3 class="font-semibold text-lg text-brand-700">Are there scholarships available for agriculture students?
@@ -664,16 +667,100 @@
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
           <h3 class="font-semibold text-lg text-brand-700">Can I do B.Sc Agriculture without Biology?</h3>
-          <p class="mt-2 text-slate-600">Biology is preferred but not always compulsory. Some colleges accept PCM students. Check specific college requirements as they may vary.</p>
+          <p class="mt-2 text-slate-600">Biology is preferred but not always compulsory. Some colleges accept PCM
+            students. Check specific college requirements as they may vary.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
           <h3 class="font-semibold text-lg text-brand-700">What are the top private agriculture colleges in India?</h3>
-          <p class="mt-2 text-slate-600">Some reputed private colleges include Lovely Professional University, Chandigarh University, Amity University, Jain University, and Manipal University. They offer good infrastructure and placement support.</p>
+          <p class="mt-2 text-slate-600">Some reputed private colleges include Lovely Professional University,
+            Chandigarh University, Amity University, Jain University, and Manipal University. They offer good
+            infrastructure and placement support.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Call to Action -->
+  <section class="w-full bg-slate-900 text-white overflow-hidden border-b-4 border-emerald-500" id="cta">
+    <div class="max-w-7xl mx-auto px-6 py-8 md:py-10">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+
+        <div class="max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-md text-xs font-bold uppercase tracking-wider mb-3">
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            Admissions Open 2026
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+            Top <span class="text-emerald-500">Agriculture Colleges</span> in India
+          </h2>
+          <p class="text-slate-400 mt-2 text-base md:text-lg">
+            Expert counseling and guaranteed admission support by <strong>Meri Shiksha</strong>.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 lg:gap-8">
+          <div class="hidden xl:flex items-center gap-6 border-r border-slate-700 pr-8 mr-2">
+            <div class="text-center">
+              <p class="text-xl font-bold text-white">50+</p>
+              <p class="text-xs text-slate-500 uppercase">Colleges</p>
+            </div>
+            <div class="text-center">
+              <p class="text-xl font-bold text-white">Free</p>
+              <p class="text-xs text-slate-500 uppercase">Counseling</p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 w-full sm:w-auto">
+            <button id="openApply"
+              class="flex-1 sm:flex-none px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg transition-all shadow-lg shadow-emerald-900/20">
+              Apply Now
+            </button>
+            <a href="tel:+918317795774"
+              class="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-all border border-slate-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+  </section>
+  <div class="w-full bg-white border-y border-slate-100 py-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <h4 class="text-xl font-bold text-slate-800 md:w-1/4">Get Admission in 3 Easy Steps:</h4>
+
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">1</span>
+            <p class="text-sm text-slate-600 mt-1"><strong>Free Counseling:</strong> Talk to our experts about your
+              goals.</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">2</span>
+            <p class="text-sm text-slate-600 mt-1"><strong>Shortlisting:</strong> Choose from the best ICAR-approved
+              colleges.</p>
+          </div>
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">3</span>
+            <p class="text-sm text-slate-600 mt-1"><strong>Final Admission:</strong> We handle the paperwork for
+              you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Footer -->
   <footer class="border-t">
     <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-6 text-sm">
@@ -709,6 +796,12 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
+  </script>
+  <script src="../assete/js/unilist.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderUniversities("universityGrid");
+    });
   </script>
   <script>
     // reveal on scroll

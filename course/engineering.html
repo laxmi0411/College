@@ -121,12 +121,12 @@
         </span>
       </a>
       <nav class="hidden md:flex items-center gap-8 font-medium">
-        <a href="#engineering-courses" class="hover:text-brand-700"> Courses</a>
-        <a href="#eligibility" class="hover:text-brand-700">Eligibility</a>
+        <!-- <a href="#engineering-courses" class="hover:text-brand-700"> Courses</a> -->
+        <a href="#eligibility" class="hover:text-brand-700">Courses</a>
         <a href="#top-colleges" class="hover:text-brand-700">Top Colleges</a>
         <a href="#process" class="hover:text-brand-700">Process</a>
-        <a href="#apply" id="openApply" class="hover:text-brand-700 cursor-pointer">Apply</a>
         <a href="#faq" class="hover:text-brand-700">FAQ</a>
+        <a href="#cta"" class=" hover:text-brand-700 cursor-pointer">Contact</a>
       </nav>
       <div class="flex items-center gap-3">
         <button id="openApplyBtn"
@@ -139,24 +139,37 @@
 
   <!-- Popup Modal -->
   <div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
-    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg p-6 relative">
-      <!-- Close Button -->
-      <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-red-600 text-2xl">&times;</button>
-
-      <h2 class="text-xl font-bold mb-4">Apply for Engineering Admission</h2>
-      <form id="applyForm" class="space-y-4">
+    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg relative">
+      <div
+        class="bg-slate-50 w-full p-6 rounded-t-[2.5rem] border-b border-slate-100 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-black text-slate-900 ">Career Counseling 2026</h2>
+            <p class="text-[10px] text-blue-600 font-bold uppercase">Direct Admission Guidance</p>
+          </div>
+        </div>
+        <button id="closeModal"
+          class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center hover:bg-blue-600 hover:text-white justify-center text-slate-400 hover:text-red-500 transition-colors TEX">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <form id="applyForm" class="space-y-2 px-6 py-3">
         <input type="hidden" name="subject" value="New Engineering Admission Lead" />
 
         <div>
           <label class="block text-sm font-medium">Full Name *</label>
-          <input name="name" required class="mt-1 w-full rounded-xl border p-2" placeholder="Prem Kumar" />
+          <input name="name" required class=" w-full rounded-xl border p-2" placeholder="Enter your full name" />
         </div>
 
         <div class="grid sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-sm font-medium">Phone *</label>
             <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2"
-              placeholder="8317795774" />
+              placeholder="Enter Your 10-digit Number" />
           </div>
           <div>
             <label class="block text-sm font-medium">Email</label>
@@ -187,7 +200,7 @@
         <div>
           <label class="block text-sm font-medium">Message</label>
           <textarea name="message" rows="3" class="mt-1 w-full rounded-xl border p-2"
-            placeholder="JEE rank, budget, city preference…"></textarea>
+            placeholder="Intrested University / College, JEE rank, budget, city preference…"></textarea>
         </div>
 
         <div class="flex items-center gap-2 text-xs text-slate-600">
@@ -201,8 +214,6 @@
       </form>
     </div>
   </div>
-
-
 
 
   <!-- Hero -->
@@ -467,456 +478,12 @@
 
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3">
-
-        <!-- 01 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">01</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Lovely Professional University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Punjab</p>
-          </div>
-        </div>
-
-
-        <!-- 02 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">02</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Chandigarh University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Punjab</p>
-          </div>
-        </div>
-
-        <!-- 03 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">03</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Amity University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 04 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">04</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              SRM University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Tamil Nadu</p>
-          </div>
-        </div>
-
-        <!-- 05 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">05</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              VIT University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Tamil Nadu</p>
-          </div>
-        </div>
-
-        <!-- 06 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">06</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Jain University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 07 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">07</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Manipal University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 08 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">08</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Symbiosis International University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Maharashtra</p>
-          </div>
-        </div>
-
-        <!-- 09 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">09</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Christ University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 10 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">10</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Shiv Nadar University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 11 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">11</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Bennett University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 12 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">12</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Galgotias University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 13 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">13</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Sharda University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 14 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">14</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Jaypee University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 15 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">15</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Noida International University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 16 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">16</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              IIMT University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 17 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">17</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              GLA University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 18 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">18</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Sanskriti University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 19 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">19</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Mangalayatan University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 20 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">20</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Rama University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-        <!-- 21 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">21</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Invertis University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 22 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">22</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Swami Vivekanand Subharti University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 23 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">23</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Teerthanker Mahaveer University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 24 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">24</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              IFHE Hyderabad (ICFAI)
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Telangana</p>
-          </div>
-        </div>
-
-        <!-- 25 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">25</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              KL University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 26 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">26</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Vignan University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 27 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">27</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              GITAM University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 28 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">28</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              SRM University AP
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 29 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">29</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              VIT-AP University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 30 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">30</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Centurion University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 31 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">31</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              KIIT University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 32 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">32</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              SOA University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 33 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">33</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Xavier University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 34 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">34</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              CV Raman Global University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 35 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">35</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Birla Institute of Technology
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Jharkhand</p>
-          </div>
-        </div>
-
-        <!-- 36 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">36</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              ICFAI University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Jharkhand</p>
-          </div>
-        </div>
-
-        <!-- 37 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">37</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Adamas University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 38 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">38</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Brainware University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 39 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">39</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Techno India University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 40 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">40</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              University of Engineering & Management
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
+      <div id="universityGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3">
       </div>
-
 
 
     </div>
   </section>
-
-
 
   <!-- Admission Process -->
   <section id="process" class="py-10 bg-slate-50">
@@ -1146,17 +713,124 @@
 
     </div>
   </section>
+  <!-- Call to Action -->
+  <section class="w-full bg-slate-900 text-white overflow-hidden border-b-4 border-emerald-500" id="cta">
+    <div class="max-w-7xl mx-auto px-6 py-8 md:py-10">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+
+        <div class="max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-md text-xs font-bold uppercase tracking-wider mb-3">
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            Engineering Admissions Open 2026
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+            Top <span class="text-emerald-500">Engineering Colleges</span> in India
+          </h2>
+
+          <p class="text-slate-400 mt-2 text-base md:text-lg">
+            Get expert guidance, college shortlisting, and complete admission support by
+            <strong>Meri Shiksha</strong>.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 lg:gap-8">
+          <div class="hidden xl:flex items-center gap-6 border-r border-slate-700 pr-8 mr-2">
+            <div class="text-center">
+              <p class="text-xl font-bold text-white">100+</p>
+              <p class="text-xs text-slate-500 uppercase">Engineering Colleges</p>
+            </div>
+            <div class="text-center">
+              <p class="text-xl font-bold text-white">Free</p>
+              <p class="text-xs text-slate-500 uppercase">Career Counseling</p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 w-full sm:w-auto">
+            <button id="openApply"
+              class="flex-1 sm:flex-none px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg transition-all shadow-lg shadow-emerald-900/20">
+              Apply Now
+            </button>
+
+            <a href="tel:+918317795774"
+              class="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-all border border-slate-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="w-full bg-white border-y border-slate-100 py-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <h4 class="text-xl font-bold text-slate-800 md:w-1/4">
+          Get Engineering Admission in 3 Easy Steps:
+        </h4>
+
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+              1
+            </span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>Free Counseling:</strong> Discuss your interests, rank, and career goals with our engineering
+              experts.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+              2
+            </span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>College Shortlisting:</strong> Select from top AICTE-approved engineering colleges across India.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+              3
+            </span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>Final Admission:</strong> We manage documentation, application, and admission process for you.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="border-t">
     <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-6 text-sm">
-
       <div>
-        <p class="font-bold">College Wallah</p>
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 text-brand-700">
+            <path fill="currentColor" d="M12 2L1 7l11 5 9-4.091V14h2V7z" />
+            <path fill="currentColor" d="M4 12v4.5C4 18.985 7.582 21 12 21s8-2.015 8-4.5V12l-8 3.636z" />
+          </svg>
+          <p class="font-bold">College Wallah</p>
+
+        </div>
         <p class="mt-2 text-slate-600">
           All-India Course & College Admission Assistance.
         </p>
       </div>
-
       <div>
         <p class="font-semibold">Contact</p>
         <p class="mt-2">
@@ -1204,61 +878,79 @@
     document.getElementById("year").innerText = new Date().getFullYear();
   </script>
   <!-- JS -->
+  <script src="../assete/js/unilist.js"></script>
   <script>
-    const modal = document.getElementById('applyModal');
-    const openBtns = [document.getElementById('openApplyBtn'), document.getElementById('openApply'), document.getElementById('openApplyBtn2')];
-    const closeBtn = document.getElementById('closeModal');
-
-    openBtns.forEach(btn => {
-      if (btn) {
-        btn.addEventListener('click', () => {
-          modal.classList.remove('hidden');
-        });
-      }
+    document.addEventListener("DOMContentLoaded", () => {
+      renderUniversities("universityGrid");
     });
+  </script>
 
-    closeBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-    });
+  <script>
+    // reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show') })
+    }, { threshold: 0.1 })
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 
-    // Close modal when clicking outside
-    window.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-      }
-    });
-
-    // Slider functionality
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
-    slides[currentSlide].classList.add('active');
+    // Simple fade slider (15 images) – changes every 3s
+    const slides = Array.from(document.querySelectorAll('.slide'))
+    let idx = 0
     setInterval(() => {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }, 3000);
+      slides[idx].classList.remove('active')
+      idx = (idx + 1) % slides.length
+      slides[idx].classList.add('active')
+    }, 3000)
 
-    // Form submission
+    // Modal functionality
+    const modal = document.getElementById('applyModal')
+    const openApply = document.getElementById('openApply')
+    const openApplyBtn = document.getElementById('openApplyBtn')
+    const closeModal = document.getElementById('closeModal')
+
+    function openModal() {
+      modal.classList.remove('hidden')
+    }
+
+    function closeModalFunc() {
+      modal.classList.add('hidden')
+    }
+
+    openApply.addEventListener('click', openModal)
+    openApplyBtn.addEventListener('click', openModal)
+    closeModal.addEventListener('click', closeModalFunc)
+
+    // Close modal on outside click
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        closeModalFunc()
+      }
+    })
+
+    // form inline success (AJAX optional)
     const form = document.getElementById('applyForm');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      document.getElementById('formMsg').classList.remove('hidden');
-    });
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent default form submission
+      // Simulate form submission success
+      msg.classList.remove('hidden');
+      form.reset();
+      // Optionally close modal after submission
+      setTimeout(() => {
+        closeModalFunc();
+        msg.classList.add('hidden');
+      }, 3000);
+    })
 
-    // Reveal animations
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    });
-    reveals.forEach(reveal => observer.observe(reveal));
+    // copyright year
+    document.getElementById('year').textContent = new Date().getFullYear()
   </script>
   <script src="../assete/js/collegeCard.js"></script>
   <script src="../assete/js/colleges/eng.js"></script>
   <script src="../assete/js/main.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 
 </html>
