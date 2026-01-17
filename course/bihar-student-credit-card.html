@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bihar Student Credit Card Scheme - Education Loan Details</title>
+  <meta name="description" content="Comprehensive guide to Bihar Student Credit Card Scheme: eligibility, loan amount, interest rates, application process, and benefits for Bihar students pursuing higher education." />
+  <link rel="canonical" href="https://www.yourdomain.com/bihar-student-credit-card.html" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bihar Student Credit Card Scheme" />
+  <meta property="og:description" content="Education finance up to ₹4 Lakh with low interest — supporting Bihar students to pursue higher studies without financial stress." />
+  <meta property="og:image" content="https://www.yourdomain.com/og-cover.jpg" />
+  <meta property="og:url" content="https://www.yourdomain.com/bihar-student-credit-card.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {50: '#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#5254eb',700:'#4338ca',800:'#3730a3',900:'#312e81'}
+          },
+          fontFamily: {sans: ['Inter','ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Helvetica','Arial','Noto Sans','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol']}
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .reveal{opacity:0; transform:translateY(8px); transition:opacity .7s ease, transform .7s ease}
+    .reveal.show{opacity:1; transform:translateY(0)}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-white">
+  <!-- Top bar -->
+  <div class="bg-brand-700 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <p class="font-medium">🎓 All‑India College Admissions — Free Counseling | Hindi & English</p>
+      <div class="flex items-center gap-4">
+        <a href="tel:+918317795774" class="hover:underline">📞 +91‑83177-95774</a>
+        <a target="_blank" rel="noopener" href="https://wa.me/918317795774?text=Hi%20I%20need%20admission%20help" class="hover:underline">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <!-- Inline SVG Logo (graduation cap) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+        class="h-9 w-9 text-brand-700">
+        <path fill="currentColor" d="M12 2L1 7l11 5 9-4.091V14h2V7z"/>
+        <path fill="currentColor" d="M4 12v4.5C4 18.985 7.582 21 12 21s8-2.015 8-4.5V12l-8 3.636z"/>
+      </svg>
+      <span class="font-extrabold text-xl">College Wallah
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 font-medium">
+      <a href="index.html#education-ladder" class="hover:text-brand-700">Education Ladder</a>
+      <a href="index.html#Placement" class="hover:text-brand-700">Placement</a>
+      <a href="index.html#popular-courses" class="hover:text-brand-700">Popular Courses</a>
+      <a href="index.html#process" class="hover:text-brand-700">Process</a>
+      <a href="index.html#apply" id="openApply" class="hover:text-brand-700 cursor-pointer">Apply</a>
+      <a href="index.html#faq" class="hover:text-brand-700">FAQ</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <button id="openApplyBtn" class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow">Apply Now</button>
+      <a href="tel:+918317795774" class="px-4 py-2 rounded-xl border border-slate-300 hover:border-brand-600">Call</a>
+    </div>
+  </div>
+</header>
+
+<!-- Popup Modal -->
+<div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
+  <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg p-6 relative">
+    <!-- Close Button -->
+    <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-red-600 text-2xl">&times;</button>
+
+    <h2 class="text-xl font-bold mb-4">Apply for Admission</h2>
+    <form id="applyForm" class="space-y-4">
+      <input type="hidden" name="subject" value="New Admission Lead" />
+
+      <div>
+        <label class="block text-sm font-medium">Full Name *</label>
+        <input name="name" required class="mt-1 w-full rounded-xl border p-2" placeholder="Type your name" />
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium">Phone *</label>
+          <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2" placeholder="Your Phone Number" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" name="email" class="mt-1 w-full rounded-xl border p-2" placeholder="you@example.com" />
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium">State</label>
+          <input name="state" class="mt-1 w-full rounded-xl border p-2" placeholder="Your State" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Interested Course *</label>
+          <select name="course" required class="mt-1 w-full rounded-xl border p-2">
+            <option>All Course</option>
+            <option>BA</option>
+            <option>BSc</option>
+            <option>BCom</option>
+            <option>BBA</option>
+            <option>BCA</option>
+            <option>BTech</option>
+            <option>MBA</option>
+            <option>MCA</option>
+            <option>MTech</option>
+            <option>PhD</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Message</label>
+        <textarea name="message" rows="3" class="mt-1 w-full rounded-xl border p-2" placeholder="Rank/percentile, budget, city preference…"></textarea>
+      </div>
+
+      <div class="flex items-center gap-2 text-xs text-slate-600">
+        <input id="consent" type="checkbox" required class="rounded" />
+        <label for="consent">I agree to be contacted via call/WhatsApp/SMS.</label>
+      </div>
+
+      <button class="mt-2 w-full px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Submit</button>
+      <p id="formMsg" class="text-sm text-green-700 hidden">Thank you! We will contact you shortly.</p>
+    </form>
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+  const modal = document.getElementById('applyModal');
+  const openBtns = [document.getElementById('openApplyBtn'), document.getElementById('openApply')];
+  const closeBtn = document.getElementById('closeModal');
+
+  openBtns.forEach(btn => {
+    if (btn) {
+      btn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+      });
+    }
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.add('hidden');
+  });
+
+  // Close modal when clicking outside
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+</script>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-brand-50 to-white py-14">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Bihar Student Credit Card Scheme</h1>
+        <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Education finance up to ₹4 Lakh with low interest rates, no collateral required. Empowering Bihar students to pursue higher education without financial barriers.</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <a href="#apply" class="px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Apply for Loan</a>
+          <a href="#eligibility" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Check Eligibility</a>
+          <a href="tel:+918317795774" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Call for Help</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="reveal">
+          <h2 class="text-2xl md:text-3xl font-bold">Scheme Overview</h2>
+          <p class="mt-4 text-slate-600">Launched by the Government of Bihar, the Bihar Student Credit Card Scheme aims to provide financial assistance to meritorious students from economically weaker sections. It offers education loans up to ₹4 lakh at subsidized interest rates, ensuring that financial constraints do not hinder educational aspirations.</p>
+          <ul class="mt-6 space-y-2 text-slate-600">
+            <li>✅ Up to ₹4 Lakh loan amount</li>
+            <li>✅ Interest rates from 0% to 4%</li>
+            <li>✅ No collateral or guarantor required</li>
+            <li>✅ Repayment starts after job placement</li>
+            <li>✅ Covers tuition, hostel, and other education expenses</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800&auto=format&fit=crop" alt="Students studying" class="rounded-2xl shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="py-14 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center">Key Features</h2>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">💰</div>
+          <h3 class="font-semibold">Loan Amount</h3>
+          <p class="mt-2 text-sm text-slate-600">Up to ₹4,00,000 for higher education courses in India and abroad.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">📉</div>
+          <h3 class="font-semibold">Low Interest</h3>
+          <p class="mt-2 text-sm text-slate-600">Subsidized rates from 0% to 4% per annum, much lower than market rates.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">🔓</div>
+          <h3 class="font-semibold">No Collateral</h3>
+          <p class="mt-2 text-sm text-slate-600">No need for property or assets as security for the loan.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">⏳</div>
+          <h3 class="font-semibold">Flexible Repayment</h3>
+          <p class="mt-2 text-sm text-slate-600">Repayment begins only after securing employment, with moratorium period.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Eligibility -->
+  <section id="eligibility" class="py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Eligibility Criteria</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-8">
+        <div class="reveal">
+          <h3 class="text-xl font-semibold">Who Can Apply?</h3>
+          <ul class="mt-4 space-y-2 text-slate-600">
+            <li>• Students who are permanent residents of Bihar</li>
+            <li>• Pursuing undergraduate or postgraduate courses</li>
+            <li>• Minimum 60% marks in Class 12 (or equivalent)</li>
+            <li>• Family income less than ₹6 lakh per annum</li>
+            <li>• Age between 17-25 years</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3 class="text-xl font-semibold">Courses Covered</h3>
+          <ul class="mt-4 space-y-2 text-slate-600">
+            <li>• Engineering (B.Tech, M.Tech)</li>
+            <li>• Medical (MBBS, BDS, Nursing)</li>
+            <li>• Management (MBA, BBA)</li>
+            <li>• Science, Arts, Commerce degrees</li>
+            <li>• Professional courses like Law, Pharmacy</li>
+            <li>• Studies in India or abroad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Process -->
+  <section class="py-14 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center">How to Apply</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white border reveal text-center">
+          <div class="text-4xl mb-4">1️⃣</div>
+          <h3 class="font-semibold">Online Application</h3>
+          <p class="mt-2 text-sm text-slate-600">Fill the online application form on the official portal or through designated banks.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal text-center">
+          <div class="text-4xl mb-4">2️⃣</div>
+          <h3 class="font-semibold">Document Verification</h3>
+          <p class="mt-2 text-sm text-slate-600">Submit required documents for verification at the bank or nodal agency.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal text-center">
+          <div class="text-4xl mb-4">3️⃣</div>
+          <h3 class="font-semibold">Loan Disbursement</h3>
+          <p class="mt-2 text-sm text-slate-600">Once approved, funds are directly transferred to the educational institution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documents Required -->
+  <section class="py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Documents Required</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-8">
+        <div class="reveal">
+          <h3 class="text-xl font-semibold">Identity & Residence Proof</h3>
+          <ul class="mt-4 space-y-2 text-slate-600">
+            <li>• Aadhaar Card</li>
+            <li>• PAN Card</li>
+            <li>• Bihar Domicile Certificate</li>
+            <li>• Passport-size photographs</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3 class="text-xl font-semibold">Academic & Income Proof</h3>
+          <ul class="mt-4 space-y-2 text-slate-600">
+            <li>• Class 10 & 12 mark sheets</li>
+            <li>• Admission letter from college/university</li>
+            <li>• Fee structure of the course</li>
+            <li>• Income certificate of parents</li>
+            <li>• Bank statements (if applicable)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="py-14 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center">Benefits of the Scheme</h2>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">🎓</div>
+          <h3 class="font-semibold">Access to Quality Education</h3>
+          <p class="mt-2 text-sm text-slate-600">Enables students to pursue higher education in reputed institutions without worrying about finances.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">💼</div>
+          <h3 class="font-semibold">Career Advancement</h3>
+          <p class="mt-2 text-sm text-slate-600">Higher education leads to better job opportunities and improved earning potential.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">🏛️</div>
+          <h3 class="font-semibold">Government Support</h3>
+          <p class="mt-2 text-sm text-slate-600">Backed by the Government of Bihar, ensuring reliability and long-term benefits.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">⏰</div>
+          <h3 class="font-semibold">Flexible Terms</h3>
+          <p class="mt-2 text-sm text-slate-600">Low interest and deferred repayment make it student-friendly.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">🌍</div>
+          <h3 class="font-semibold">National & International</h3>
+          <p class="mt-2 text-sm text-slate-600">Applicable for courses in India and select foreign universities.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border reveal">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="font-semibold">No Hidden Costs</h3>
+          <p class="mt-2 text-sm text-slate-600">Transparent process with no additional charges or hidden fees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Apply -->
+  <section id="apply" class="py-14 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center">
+        <h2 class="text-2xl md:text-3xl font-bold">Ready to Apply?</h2>
+        <p class="mt-4 text-slate-600">Get expert guidance on the Bihar Student Credit Card Scheme application process.</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <a href="tel:+918317795774" class="px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Call Now</a>
+          <a target="_blank" rel="noopener" href="https://wa.me/918317795774?text=Hi%20I%20need%20help%20with%20Bihar%20Student%20Credit%20Card" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">WhatsApp</a>
+          <a href="index.html#apply" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Apply for Admission</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-6 text-sm">
+      <div>
+        <p class="font-bold">College Wallah</p>
+        <p class="mt-2 text-slate-600">PAN‑India College Admission Assistance.</p>
+      </div>
+      <div>
+        <p class="font-semibold">Contact</p>
+        <p class="mt-2"><a href="tel:+918317795774" class="hover:underline">+91‑83177-95774</a></p>
+        <p><a href="mailto:apremraj9570raj@gmail.com" class="hover:underline">apremraj9570raj@gmail.com</a></p>
+        <p><a target="_blank" rel="noopener" href="https://wa.me/918317795774" class="hover:underline">WhatsApp</a></p>
+      </div>
+      <div>
+        <p class="font-semibold">Company</p>
+        <ul class="mt-2 space-y-1">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="hover:underline">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold">Follow</p>
+        <ul class="mt-2 space-y-1">
+          <li><a href="#" class="hover:underline">Instagram</a></li>
+          <li><a href="#" class="hover:underline">YouTube</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-xs text-slate-500 pb-8">© <span id="year"></span> All‑India College Admissions</div>
+  </footer>
+
+  <script>
+    // reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show') })
+    }, { threshold: 0.1 })
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el))
+
+    // copyright year
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
