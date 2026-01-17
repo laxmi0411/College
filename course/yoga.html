@@ -2,18 +2,20 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yoga Colleges in India | Eligibility, Qualifications & Admissions</title>
   <meta name="description"
     content="Explore yoga colleges in India: B.Yoga, M.Yoga, Diploma. Eligibility, qualifications, top universities, entrance exams, and free admission counseling." />
   <link rel="canonical" href="https://www.yourdomain.com/yoga.html" />
   <link rel="icon" href="/favicon.ico" />
-  <script src="https://unpkg.com/lucide@latest"></script>
+
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Yoga Colleges in India" />
-  <meta property="og:description" content="Admissions for B.Yoga, M.Yoga & more across India. Free counseling." />
+  <meta property="og:description"
+    content="Admissions for B.Yoga, M.Yoga, Diploma & more across India. Free counseling." />
   <meta property="og:image" content="https://www.yourdomain.com/og-cover.jpg" />
   <meta property="og:url" content="https://www.yourdomain.com/yoga.html" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -32,6 +34,7 @@
       }
     }
   </script>
+
 
   <!-- Schema: Organization + FAQ -->
   <script type="application/ld+json">
@@ -93,6 +96,7 @@
     }
   </style>
 </head>
+
 <body class="antialiased text-slate-800 bg-white">
   <!-- Top bar -->
   <div class="bg-brand-700 text-white text-sm">
@@ -100,99 +104,117 @@
       <p class="font-medium">⚙️ Yoga Colleges in India — Free Counseling | Hindi & English</p>
       <div class="flex items-center gap-4">
         <a href="tel:+918317795774" class="hover:underline">📞 +91‑83177-95774</a>
-        <a target="_blank" rel="noopener"
-          href="https://wa.me/918317795774?text=Hi%20I%20need%20yoga%20admission%20help"
+        <a target="_blank" rel="noopener" href="https://wa.me/918317795774?text=Hi%20I%20need%20yoga%20admission%20help"
           class="hover:underline">💬 WhatsApp</a>
       </div>
     </div>
   </div>
 
   <!-- Header -->
-<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-3">
-      <!-- Inline SVG Logo (graduation cap) -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-9 w-9 text-brand-700">
-        <path fill="currentColor" d="M12 2L1 7l11 5 9-4.091V14h2V7z"/>
-        <path fill="currentColor" d="M4 12v4.5C4 18.985 7.582 21 12 21s8-2.015 8-4.5V12l-8 3.636z"/>
-      </svg>
-      <span class="font-extrabold text-xl">College Wallah
-      </span>
-    </a>
-    <nav class="hidden md:flex items-center gap-8 font-medium">
-      <a href="index.html" class="hover:text-brand-700">Home</a>
-      <a href="#yoga-courses" class="hover:text-brand-700"> Courses</a>
-      <a href="#eligibility" class="hover:text-brand-700">Eligibility</a>
-      <a href="#top-colleges" class="hover:text-brand-700">Top Colleges</a>
-      <a href="#process" class="hover:text-brand-700">Process</a>
-      <a href="#apply" id="openApply" class="hover:text-brand-700 cursor-pointer">Apply</a>
-      <a href="#faq" class="hover:text-brand-700">FAQ</a>
-    </nav>
-    <div class="flex items-center gap-3">
-      <button id="openApplyBtn" class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow">Apply Now</button>
-      <a href="tel:+918317795774" class="px-4 py-2 rounded-xl border border-slate-300 hover:border-brand-600">Call</a>
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <!-- Inline SVG Logo (graduation cap) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-9 w-9 text-brand-700">
+          <path fill="currentColor" d="M12 2L1 7l11 5 9-4.091V14h2V7z" />
+          <path fill="currentColor" d="M4 12v4.5C4 18.985 7.582 21 12 21s8-2.015 8-4.5V12l-8 3.636z" />
+        </svg>
+        <span class="font-extrabold text-xl">College Wallah
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="index.html" class="hover:text-brand-700">Home</a>
+        <a href="#yoga-courses" class="hover:text-brand-700"> Courses</a>
+        <a href="#eligibility" class="hover:text-brand-700">Eligibility</a>
+        <a href="#top-colleges" class="hover:text-brand-700">Top Colleges</a>
+        <a href="#process" class="hover:text-brand-700">Process</a>
+        <a href="#apply" id="openApply" class="hover:text-brand-700 cursor-pointer">Apply</a>
+        <a href="#faq" class="hover:text-brand-700">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button id="openApplyBtn"
+          class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow">Apply
+          Now</button>
+        <a href="tel:+918317795774" class="px-4 py-2 rounded-xl border border-slate-300 hover:border-brand-600">Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Popup Modal -->
+  <div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
+    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg relative">
+
+      <div
+        class="bg-slate-50 w-full p-6 rounded-t-[2.5rem] border-b border-slate-100 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-black text-slate-900 ">Career Counseling 2026</h2>
+            <p class="text-[10px] text-blue-600 font-bold uppercase">Direct Admission Guidance</p>
+          </div>
+        </div>
+        <button id="closeModal"
+          class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center hover:bg-blue-600 hover:text-white justify-center text-slate-400 hover:text-red-500 transition-colors TEX">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <form id="applyForm" class="space-y-4 py-3 px-6" action="https://formspree.io/f/mayvlrjd" method="POST">
+        <input type=" hidden" name="subject" value="New Yoga Admission Lead" />
+
+        <div>
+          <label class="block text-sm font-medium">Full Name *</label>
+          <input name="name" required class=" w-full rounded-xl border p-2" placeholder="Enter your full name" />
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium">Phone *</label>
+            <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2"
+              placeholder="Enter Your 10-digit Number" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Email</label>
+            <input type="email" name="email" class="mt-1 w-full rounded-xl border p-2" placeholder="you@example.com" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium">State</label>
+            <input name="state" class="mt-1 w-full rounded-xl border p-2" placeholder="Rajasthan" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Interested Course *</label>
+            <select name="course" required class="mt-1 w-full rounded-xl border p-2">
+              <option>B.Yoga</option>
+              <option>M.Yoga</option>
+              <option>Diploma in Yoga</option>
+              <option>Yoga Therapy</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Message</label>
+          <textarea name="message" rows="3" class="mt-1 w-full rounded-xl border p-2"
+            placeholder="Intrested University / College, Experience level, budget, city preference…"></textarea>
+        </div>
+
+        <div class="flex items-center gap-2 text-xs text-slate-600">
+          <input id="consent" type="checkbox" required class="rounded" />
+          <label for="consent">I agree to be contacted via call/WhatsApp/SMS.</label>
+        </div>
+
+        <button
+          class="mt-2 w-full px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Submit</button>
+        <p id="formMsg" class="text-sm text-green-700 hidden">Thank you! We will contact you shortly.</p>
+      </form>
     </div>
   </div>
-</header>
-
-<!-- Popup Modal -->
-<div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
-  <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg p-6 relative">
-    <!-- Close Button -->
-    <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-red-600 text-2xl">&times;</button>
-
-    <h2 class="text-xl font-bold mb-4">Apply for Yoga Admission</h2>
-    <form id="applyForm" class="space-y-4">
-      <input type="hidden" name="subject" value="New Yoga Admission Lead" />
-
-      <div>
-        <label class="block text-sm font-medium">Full Name *</label>
-        <input name="name" required class="mt-1 w-full rounded-xl border p-2" placeholder="Prem Kumar" />
-      </div>
-
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-sm font-medium">Phone *</label>
-          <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2" placeholder="8317795774" />
-        </div>
-        <div>
-          <label class="block text-sm font-medium">Email</label>
-          <input type="email" name="email" class="mt-1 w-full rounded-xl border p-2" placeholder="you@example.com" />
-        </div>
-      </div>
-
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-sm font-medium">State</label>
-          <input name="state" class="mt-1 w-full rounded-xl border p-2" placeholder="Rajasthan" />
-        </div>
-        <div>
-          <label class="block text-sm font-medium">Interested Course *</label>
-          <select name="course" required class="mt-1 w-full rounded-xl border p-2">
-            <option>B.Yoga</option>
-            <option>M.Yoga</option>
-            <option>Diploma in Yoga</option>
-            <option>Yoga Therapy</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-
-      <div>
-        <label class="block text-sm font-medium">Message</label>
-        <textarea name="message" rows="3" class="mt-1 w-full rounded-xl border p-2" placeholder="Experience level, budget, city preference…"></textarea>
-      </div>
-
-      <div class="flex items-center gap-2 text-xs text-slate-600">
-        <input id="consent" type="checkbox" required class="rounded" />
-        <label for="consent">I agree to be contacted via call/WhatsApp/SMS.</label>
-      </div>
-
-      <button class="mt-2 w-full px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Submit</button>
-      <p id="formMsg" class="text-sm text-green-700 hidden">Thank you! We will contact you shortly.</p>
-    </form>
-  </div>
-</div>
 
 
 
@@ -201,12 +223,18 @@
   <section class="bg-gradient-to-b from-brand-50 to-white">
     <div class="max-w-7xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
       <div class="reveal">
-        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Yoga Colleges in India <span class="text-brand-700">Eligibility & Qualifications</span></h1>
-        <p class="mt-4 text-lg text-slate-600">Get admission to B.Yoga, M.Yoga, Diploma in Yoga & more. Top universities, entrance exams, scholarships, and free counseling.</p>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Yoga Colleges in India <span
+            class="text-brand-700">Eligibility & Qualifications</span></h1>
+        <p class="mt-4 text-lg text-slate-600">Get admission to B.Yoga, M.Yoga, Diploma in Yoga & more. Top
+          universities, entrance exams, scholarships, and free counseling.</p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#apply" class="px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Get Free Counseling</a>
-          <a href="https://wa.me/918317795774?text=Hi%20I%20need%20yoga%20admission%20help" target="_blank" rel="noopener" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Chat on WhatsApp</a>
-          <a href="tel:+918317795774" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Call Now</a>
+          <a href="#apply" class="px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Get Free
+            Counseling</a>
+          <a href="https://wa.me/918317795774?text=Hi%20I%20need%20yoga%20admission%20help" target="_blank"
+            rel="noopener" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Chat on
+            WhatsApp</a>
+          <a href="tel:+918317795774" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Call
+            Now</a>
         </div>
         <ul class="mt-6 grid grid-cols-2 gap-3 text-sm text-slate-600">
           <li>✅ Top Yoga Universities</li>
@@ -222,7 +250,8 @@
 
         <div class="relative overflow-hidden rounded-[2.5rem] shadow-2xl border-8 border-white">
           <div class="slider  relative overflow-hidden bg-slate-200">
-            <img class="slide object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" src="../assete/yoga.webp" alt="Yoga Students Learning" />
+            <img class="slide object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+              src="../assete/yoga.webp" alt="Yoga Students Learning" />
 
 
           </div>
@@ -260,127 +289,165 @@
     </div>
   </section>
 
-  <!-- Yoga Courses -->
-  <section id="yoga-courses" class="py-16 bg-slate-50">
+  <!-- Eligibility Criteria -->
+  <section id="eligibility" class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4">
 
       <div class="mb-10 border-b border-slate-200 pb-8">
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Yoga Programs & Eligibility</h2>
-        <p class="mt-2 text-slate-600">Detailed overview of undergraduate and postgraduate yoga courses with entry requirements.</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Eligibility Criteria for Yoga Courses</h2>
+        <p class="mt-2 text-slate-600">Minimum qualifications and requirements for admission to yoga programs
+          across India.</p>
       </div>
 
       <div class="grid lg:grid-cols-3 gap-6">
 
         <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm reveal">
           <div class="flex items-center gap-3 mb-6">
-            <div class="w-1.5 h-8 bg-blue-600 rounded-full"></div>
-            <h3 class="font-bold text-xl text-slate-800">Core Undergraduate</h3>
+            <div class="w-1.5 h-8 bg-green-600 rounded-full"></div>
+            <h3 class="font-bold text-xl text-slate-800">Undergraduate Programs</h3>
           </div>
 
           <div class="space-y-5">
             <div class="group">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">B.Yoga (Bachelor of Yoga)</h4>
+                <h4 class="font-bold text-slate-900 group-hover:text-green-600 transition-colors">B.Yoga (Bachelor of
+                  Yoga)</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">3 YEARS</span>
               </div>
-              <p class="text-xs text-slate-500 leading-relaxed">
-                <span class="font-semibold text-blue-600">Eligibility:</span> 10+2 with any stream (Min 50%) + Merit-based admission.
-              </p>
+              <ul class="text-xs text-slate-500 leading-relaxed space-y-1">
+                <li><span class="font-semibold text-green-600">Qualification:</span> 10+2 with any stream (Min 50%)</li>
+                <li><span class="font-semibold text-green-600">Entrance:</span> Merit-based/State CETs</li>
+                <li><span class="font-semibold text-green-600">Age:</span> 17-25 years</li>
+              </ul>
               <div class="mt-4 h-px bg-slate-50"></div>
             </div>
 
             <div class="group">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">BSc Yoga</h4>
+                <h4 class="font-bold text-slate-900 group-hover:text-green-600 transition-colors">BSc Yoga</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">3 YEARS</span>
               </div>
-              <p class="text-xs text-slate-500 leading-relaxed">
-                <span class="font-semibold text-blue-600">Eligibility:</span> 10+2 with Science stream (Min 50%) + Merit-based admission.
-              </p>
+              <ul class="text-xs text-slate-500 leading-relaxed space-y-1">
+                <li><span class="font-semibold text-green-600">Qualification:</span> 10+2 with Science (Min 50%)</li>
+                <li><span class="font-semibold text-green-600">Entrance:</span> Merit-based/State Exams</li>
+                <li><span class="font-semibold text-green-600">Age:</span> 17-25 years</li>
+              </ul>
               <div class="mt-4 h-px bg-slate-50"></div>
             </div>
 
             <div class="group">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">BA Yoga</h4>
+                <h4 class="font-bold text-slate-900 group-hover:text-green-600 transition-colors">BA Yoga</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">3 YEARS</span>
               </div>
-              <p class="text-xs text-slate-500 leading-relaxed">
-                <span class="font-semibold text-blue-600">Eligibility:</span> 10+2 with any stream (Min 50%) + Merit-based admission.
-              </p>
+              <ul class="text-xs text-slate-500 leading-relaxed space-y-1">
+                <li><span class="font-semibold text-green-600">Qualification:</span> 10+2 (any stream) 50% aggregate
+                </li>
+                <li><span class="font-semibold text-green-600">Entrance:</span> ICAR/State CETs</li>
+                <li><span class="font-semibold text-green-600">Age:</span> 17-25 years</li>
+              </ul>
             </div>
           </div>
         </div>
 
         <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm reveal">
           <div class="flex items-center gap-3 mb-6">
-            <div class="w-1.5 h-8 bg-indigo-600 rounded-full"></div>
+            <div class="w-1.5 h-8 bg-emerald-600 rounded-full"></div>
             <h3 class="font-bold text-xl text-slate-800">Specialized Yoga</h3>
           </div>
 
           <div class="space-y-5">
             <div class="group">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Yoga Therapy</h4>
+                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">Yoga Therapy</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">3 YEARS</span>
               </div>
-              <p class="text-xs text-slate-500 leading-relaxed">
-                <span class="font-semibold text-indigo-600">Eligibility:</span> 10+2 with Science (Min 50%) + Focus on therapeutic yoga.
-              </p>
+              <ul class="text-xs text-slate-500 leading-relaxed space-y-1">
+                <li><span class="font-semibold text-emerald-600">Qualification:</span> 10+2 with Science (Min 50%)</li>
+                <li><span class="font-semibold text-emerald-600">Entrance:</span> Merit-based/State Exams</li>
+                <li><span class="font-semibold text-emerald-600">Age:</span> 17-25 years</li>
+              </ul>
               <div class="mt-4 h-px bg-slate-50"></div>
             </div>
 
             <div class="group">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Yoga Instructor</h4>
+                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">Yoga Instructor
+                  Certification</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">1 YEAR</span>
               </div>
-              <p class="text-xs text-slate-500 leading-relaxed">
-                <span class="font-semibold text-indigo-600">Eligibility:</span> 10+2 with any stream + Basic yoga knowledge.
-              </p>
+              <ul class="text-xs text-slate-500 leading-relaxed space-y-1">
+                <li><span class="font-semibold text-emerald-600">Qualification:</span> 10+2 (any stream) 50%</li>
+                <li><span class="font-semibold text-emerald-600">Entrance:</span> ICAR/State CETs</li>
+                <li><span class="font-semibold text-emerald-600">Age:</span> 17-25 years</li>
+              </ul>
             </div>
           </div>
         </div>
 
         <div class="bg-slate-900 rounded-3xl p-6 shadow-xl reveal">
           <div class="flex items-center gap-3 mb-6">
-            <div class="w-1.5 h-8 bg-emerald-400 rounded-full"></div>
-            <h3 class="font-bold text-xl text-white">Postgraduate & Research</h3>
+            <div class="w-1.5 h-8 bg-lime-400 rounded-full"></div>
+            <h3 class="font-bold text-xl text-white">Postgraduate & Diploma</h3>
           </div>
 
           <div class="space-y-5">
             <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-emerald-400 text-sm">M.Yoga (Master of Yoga)</h4>
+                <h4 class="font-bold text-lime-400 text-sm">M.Yoga (Master of Yoga)</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-700 px-2 py-0.5 rounded">2 YEARS</span>
               </div>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                <span class="text-emerald-400 font-semibold">Eligibility:</span> B.Yoga degree (Min 50%) + Entrance exam or merit-based.
-              </p>
+              <ul class="text-xs text-slate-300 leading-relaxed space-y-1">
+                <li><span class="text-lime-400 font-semibold">Qualification:</span> B.Yoga degree (50-60%)</li>
+                <li><span class="text-lime-400 font-semibold">Entrance:</span> University Entrance</li>
+                <li><span class="text-lime-400 font-semibold">Age:</span> No upper limit</li>
+              </ul>
             </div>
 
             <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-emerald-400 text-sm">Diploma in Yoga</h4>
+                <h4 class="font-bold text-lime-400 text-sm">Diploma in Yoga</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-700 px-2 py-0.5 rounded">1-2 YEARS</span>
               </div>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                <span class="text-emerald-400 font-semibold">Eligibility:</span> 10th pass (Min 45%) + Basic yoga knowledge.
-              </p>
+              <ul class="text-xs text-slate-300 leading-relaxed space-y-1">
+                <li><span class="text-lime-400 font-semibold">Qualification:</span> 10th Standard (SSC)</li>
+                <li><span class="text-lime-400 font-semibold">Entrance:</span> Merit-based</li>
+                <li><span class="text-lime-400 font-semibold">Age:</span> 15-18 years</li>
+              </ul>
             </div>
 
             <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
               <div class="flex justify-between items-center mb-1">
-                <h4 class="font-bold text-emerald-400 text-sm">M.Phil Yoga</h4>
+                <h4 class="font-bold text-lime-400 text-sm">M.Phil Yoga</h4>
                 <span class="text-[10px] font-bold text-slate-400 bg-slate-700 px-2 py-0.5 rounded">1-2 YEARS</span>
               </div>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                <span class="text-emerald-400 font-semibold">Eligibility:</span> M.Yoga degree (Min 55%) + Research proposal.
-              </p>
+              <ul class="text-xs text-slate-300 leading-relaxed space-y-1">
+                <li><span class="text-lime-400 font-semibold">Qualification:</span> M.Yoga degree</li>
+                <li><span class="text-lime-400 font-semibold">Entrance:</span> Research-based</li>
+                <li><span class="text-lime-400 font-semibold">Age:</span> No upper limit</li>
+              </ul>
             </div>
           </div>
         </div>
 
+      </div>
+
+      <div class="mt-10 p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal">
+        <h3 class="font-bold text-xl text-slate-800 mb-4">Additional Requirements</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>✅ Medical fitness certificate</li>
+            <li>✅ Character certificate from school/college</li>
+            <li>✅ Migration certificate (if applicable)</li>
+            <li>✅ Category certificate for reservations (SC/ST/OBC)</li>
+          </ul>
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li>✅ Domicile certificate for state quota</li>
+            <li>✅ Income certificate for fee waivers</li>
+            <li>✅ Passport size photographs</li>
+            <li>✅ Self-attested copies of documents</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -389,104 +456,12 @@
   <section id="top-colleges" class="py-14">
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold">Top Yoga Colleges in India</h2>
-      <p class="mt-2 text-slate-600">Leading institutions for yoga education, ranked by reputation, facilities, and faculty.</p>
-      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 New Delhi, Delhi</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Morarji Desai National Institute of Yoga</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 2002 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: Ministry of AYUSH</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2, 50% marks</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Bengaluru, Karnataka</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">S-VYASA University</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 2002 | Deemed University</p>
-          <p class="text-sm text-gray-600">Approved By: UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2, 50% marks</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Pune, Maharashtra</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Tilak Maharashtra Vidyapeeth</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1921 | Deemed University</p>
-          <p class="text-sm text-gray-600">Approved By: UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2, 50% marks</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Haridwar, Uttarakhand</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Patanjali University</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 2006 | Private</p>
-          <p class="text-sm text-gray-600">Approved By: UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2, 50% marks</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Rishikesh, Uttarakhand</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Swami Rama Himalayan University</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 2013 | Private</p>
-          <p class="text-sm text-gray-600">Approved By: UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2, 50% marks</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Mumbai, Maharashtra</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Mumbai University - Yoga Department</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1857 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2, 50% marks</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-      </div>
-</section>
+      <p class="mt-2 text-slate-600">Leading institutions for yoga education, ranked by reputation, facilities, and
+        faculty.</p>
+      <div id="collegeGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
-Upgrade This UI
-
-<!-- Top Private Yoga Universities in India 2026 -->
+    </div>
+  </section>
   <section class="py-12 bg-white">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
@@ -494,11 +469,11 @@ Upgrade This UI
         <!-- Left content -->
         <div class="border-b pb-4">
           <h2 class="text-2xl font-bold text-slate-900">
-            Top Private Yoga Universities in India
+            Top Private Engineering Universities in India
             <span class="text-indigo-600 text-lg align-top font-bold">2026</span>
           </h2>
           <p class="text-sm text-slate-500 mt-1">
-            Quick-access list of leading private institutions for yoga admissions.
+            Quick-access list of leading private institutions for admissions.
           </p>
         </div>
 
@@ -517,780 +492,377 @@ Upgrade This UI
 
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3">
-
-        <!-- 01 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">01</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Patanjali University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 02 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">02</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Swami Rama Himalayan University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 03 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">03</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              S-VYASA University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 04 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">04</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Tilak Maharashtra Vidyapeeth
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Maharashtra</p>
-          </div>
-        </div>
-
-        <!-- 05 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">05</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Dev Sanskriti Vishwavidyalaya
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 06 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">06</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Jain Vishva Bharati Institute
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Rajasthan</p>
-          </div>
-        </div>
-
-        <!-- 07 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">07</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Gurukul Kangri Vishwavidyalaya
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 08 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">08</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Hemwati Nandan Bahuguna Garhwal University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 09 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">09</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Kumaun University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 10 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">10</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Uttarakhand Sanskrit University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 11 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">11</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Shri Guru Ram Rai University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 12 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">12</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Graphic Era University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 13 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">13</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              DIT University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 14 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">14</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              IMS Unison University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 15 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">15</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              University of Petroleum and Energy Studies
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 16 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">16</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              ICFAI University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 17 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">17</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Amity University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 18 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">18</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Sharda University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 19 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">19</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Jaypee University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 20 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">20</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Rama University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttarakhand</p>
-          </div>
-        </div>
-
-        <!-- 21 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">21</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Invertis University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 22 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">22</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Swami Vivekanand Subharti University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 23 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">23</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Teerthanker Mahaveer University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Uttar Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 24 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">24</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              IFHE Hyderabad
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Telangana</p>
-          </div>
-        </div>
-
-        <!-- 25 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">25</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              KL University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 26 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">26</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Vignan University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 27 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">27</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              GITAM University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 28 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">28</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              SRM University AP
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 29 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">29</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              VIT-AP University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Andhra Pradesh</p>
-          </div>
-        </div>
-
-        <!-- 30 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">30</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Centurion University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 31 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">31</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              KIIT University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 32 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">32</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              SOA University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 33 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">33</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Xavier University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 34 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">34</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              CV Raman Global University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Odisha</p>
-          </div>
-        </div>
-
-        <!-- 35 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">35</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Birla Institute of Technology
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Jharkhand</p>
-          </div>
-        </div>
-
-        <!-- 36 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">36</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              ICFAI University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Jharkhand</p>
-          </div>
-        </div>
-
-        <!-- 37 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">37</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Adamas University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 38 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">38</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Brainware University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 39 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">39</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Techno India University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 40 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">40</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              University of Engineering & Management
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 41 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">41</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              JIS University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 42 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">42</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Amity University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">West Bengal</p>
-          </div>
-        </div>
-
-        <!-- 43 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">43</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Amity University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Bihar</p>
-          </div>
-        </div>
-
-        <!-- 44 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">44</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              K.K. University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Bihar</p>
-          </div>
-        </div>
-
-        <!-- 45 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">45</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Alliance University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 46 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">46</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Presidency University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 47 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">47</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              CMR University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 48 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">48</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              PES University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 49 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">49</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              REVA University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
-
-        <!-- 50 -->
-        <div class="flex items-start gap-2 py-1 group">
-          <span class="text-[10px] font-bold text-slate-300">50</span>
-          <div>
-            <h4 class="text-sm font-semibold text-slate-700 group-hover:text-indigo-600">
-              Dayananda Sagar University
-            </h4>
-            <p class="text-[10px] text-slate-400 uppercase">Karnataka</p>
-          </div>
-        </div>
+      <div id="universityGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3">
+      </div>
 
 
-  <!-- Admission Process -->
-  <section id="process" class="py-14 bg-slate-50">
+    </div>
+  </section>
+  <section id="process" class="py-16 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">Yoga Admission Process in India</h2>
-      <p class="mt-2 text-slate-600">Step-by-step guide to secure admission in top yoga colleges across India.</p>
-      <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 bg-white border rounded-2xl reveal text-center">
-          <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-brand-700">1</span>
+
+      <div class="mb-10 border-b border-slate-200 pb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Yoga Admission Process in India</h2>
+        <p class="mt-2 text-slate-600">Step-by-step guide to secure admission in top yoga institutes and courses across
+          India.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">1</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Research & Choose Course</h3>
-          <p class="text-sm text-slate-600">Select your preferred yoga specialization (Hatha, Ashtanga, Therapy, etc.) based on interests and career goals.</p>
+          <p class="text-sm text-slate-600">Select your preferred yoga program (Diploma, B.Sc Yoga, M.Sc Yoga, or
+            teacher training) based on interests and career goals.</p>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal text-center">
-          <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-brand-700">2</span>
+        <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">2</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Check Eligibility</h3>
-          <p class="text-sm text-slate-600">Ensure you meet 10+2 requirements with minimum marks. Age between 17-25 years for undergraduate.</p>
+          <p class="text-sm text-slate-600">Ensure you meet 10+2 or graduation requirements depending on the program.
+            Some courses may require prior yoga experience.</p>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal text-center">
-          <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-brand-700">3</span>
+        <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">3</span>
           </div>
-          <h3 class="font-semibold text-lg mb-2">Apply to Colleges</h3>
-          <p class="text-sm text-slate-600">Submit applications to chosen colleges with required documents. Many offer online application forms.</p>
+          <h3 class="font-semibold text-lg mb-2">Appear for Entrance/Assessment</h3>
+          <p class="text-sm text-slate-600">Take institute-specific entrance tests, yoga proficiency assessments, or
+            interviews. Prepare with recommended study materials and practice sessions.</p>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal text-center">
-          <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-brand-700">4</span>
+        <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">4</span>
           </div>
-          <h3 class="font-semibold text-lg mb-2">Entrance Exams (if required)</h3>
-          <p class="text-sm text-slate-600">Some universities conduct entrance exams or interviews. Prepare with yoga basics and theory.</p>
+          <h3 class="font-semibold text-lg mb-2">Apply & Counseling</h3>
+          <p class="text-sm text-slate-600">Submit applications to your chosen yoga institutes. Attend counseling or
+            interviews for seat allotment based on merit or assessment results.</p>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal text-center">
-          <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-brand-700">5</span>
+        <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">5</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Document Verification</h3>
-          <p class="text-sm text-slate-600">Submit 10th/12th certificates, ID proof, medical certificate, and other required documents.</p>
+          <p class="text-sm text-slate-600">Submit certificates like 10th/12th mark sheets, previous yoga training (if
+            any), identity proof, and medical fitness certificates.</p>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal text-center">
-          <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-brand-700">6</span>
+        <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">6</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Fee Payment & Admission</h3>
-          <p class="text-sm text-slate-600">Pay admission fees and complete enrollment. Check for scholarships and fee waiver options.</p>
+          <p class="text-sm text-slate-600">Pay course fees and complete enrollment. Check for scholarships, early bird
+            discounts, or fee waiver options.</p>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal text-center">
-          <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-brand-700">7</span>
+        <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">7</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Orientation & Classes</h3>
-          <p class="text-sm text-slate-600">Attend orientation program and start your yoga education with practical sessions.</p>
+          <p class="text-sm text-slate-600">Attend orientation and begin your yoga training journey with practical
+            sessions and theory classes.</p>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal text-center">
-          <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-2xl font-bold text-brand-700">8</span>
+        <div class="p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal text-center">
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold text-blue-600">8</span>
           </div>
           <h3 class="font-semibold text-lg mb-2">Career Guidance</h3>
-          <p class="text-sm text-slate-600">Get ongoing support for internships, teaching opportunities, and higher studies in yoga.</p>
+          <p class="text-sm text-slate-600">Get support for yoga teaching, wellness coaching, therapy practices, and
+            higher studies opportunities.</p>
         </div>
       </div>
-      <div class="mt-8 p-6 bg-white border rounded-2xl reveal">
-        <h3 class="font-semibold text-lg mb-4">Important Entrance Exams</h3>
-        <div class="grid md:grid-cols-2 gap-4">
+
+      <div class="mt-10 p-6 bg-white border border-slate-200 rounded-3xl shadow-sm reveal">
+        <h3 class="font-bold text-xl text-slate-800 mb-4">Important Entrance & Certification</h3>
+        <div class="grid md:grid-cols-2 gap-6">
           <div>
-            <h4 class="font-medium text-brand-700">University Entrance Exams</h4>
-            <p class="text-sm text-slate-600">Specific exams conducted by universities like S-VYASA, Patanjali University, etc.</p>
+            <h4 class="font-bold text-blue-600 text-lg">Yoga Certification Courses (Ministry of AYUSH)</h4>
+            <p class="text-sm text-slate-600">Official certifications recognized for yoga teachers and wellness
+              instructors across India.</p>
           </div>
           <div>
-            <h4 class="font-medium text-brand-700">Merit-Based Admission</h4>
-            <p class="text-sm text-slate-600">Many colleges offer admission based on 10+2 marks without entrance exams.</p>
+            <h4 class="font-bold text-blue-600 text-lg">Institute Entrance Tests</h4>
+            <p class="text-sm text-slate-600">Some institutes conduct their own entrance assessments for admission into
+              diploma or degree courses.</p>
           </div>
           <div>
-            <h4 class="font-medium text-brand-700">Interview/Practical Test</h4>
-            <p class="text-sm text-slate-600">Some institutions require yoga demonstration or personal interview.</p>
+            <h4 class="font-bold text-blue-600 text-lg">National Yoga Olympiad / Competitions</h4>
+            <p class="text-sm text-slate-600">Optional competitive exams for scholarship or recognition in yoga
+              programs.</p>
           </div>
           <div>
-            <h4 class="font-medium text-brand-700">AYUSH Entrance</h4>
-            <p class="text-sm text-slate-600">For yoga therapy programs, AYUSH entrance exams may be applicable.</p>
+            <h4 class="font-bold text-blue-600 text-lg">Teacher Training Programs (TTC)</h4>
+            <p class="text-sm text-slate-600">Short-term certified courses for aspiring yoga instructors, recognized by
+              AYUSH or specific institutes.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- FAQ Section -->
+  <!-- FAQ -->
   <section id="faq" class="py-14">
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold">Frequently Asked Questions</h2>
-      <p class="mt-2 text-slate-600">Common questions about yoga admissions, courses, and career prospects.</p>
-      <div class="mt-6 space-y-4">
+      <p class="my-2 text-slate-600">Common questions about yoga courses, certifications, and career opportunities.</p>
+
+      <div class="grid md:grid-cols-2 gap-4">
         <div class="bg-white border rounded-2xl p-6 reveal">
-          <h3 class="font-semibold text-lg text-brand-700">What is the eligibility for B.Yoga in India?</h3>
-          <p class="mt-2 text-slate-600">You need to have completed 10+2 with any stream and minimum 50% marks. Age should be between 17-25 years. No specific subject requirements.</p>
+          <h3 class="font-semibold text-lg text-brand-700">What is the eligibility for B.Sc Yoga in India?</h3>
+          <p class="mt-2 text-slate-600">You should have completed 10+2 with any stream. Some institutes may prefer
+            students with prior yoga experience. Age limits vary by institute.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
-          <h3 class="font-semibold text-lg text-brand-700">Which entrance exam is required for yoga courses?</h3>
-          <p class="mt-2 text-slate-600">Most yoga courses have merit-based admission. Some universities conduct their own entrance exams or interviews.</p>
+          <h3 class="font-semibold text-lg text-brand-700">Which entrance exams are required for yoga courses?</h3>
+          <p class="mt-2 text-slate-600">Some institutes conduct their own entrance tests or interviews. Ministry of
+            AYUSH certified courses may require assessment for teacher training programs.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
-          <h3 class="font-semibold text-lg text-brand-700">Do you help with yoga admission counseling?</h3>
-          <p class="mt-2 text-slate-600">Yes, we provide free counseling for yoga courses. Our experts help with college selection, document verification, and admission process guidance.</p>
+          <h3 class="font-semibold text-lg text-brand-700">Do you provide yoga admission counseling?</h3>
+          <p class="mt-2 text-slate-600">Yes, we provide expert guidance for yoga course selection, application
+            assistance, document verification, and admission support.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
-          <h3 class="font-semibold text-lg text-brand-700">What are the job opportunities after B.Yoga?</h3>
-          <p class="mt-2 text-slate-600">Graduates can work as Yoga Instructors, Therapists, Teachers in schools/colleges, Wellness centers, and start their own yoga studios.</p>
+          <h3 class="font-semibold text-lg text-brand-700">What career opportunities are available after completing yoga
+            courses?</h3>
+          <p class="mt-2 text-slate-600">Graduates can become Yoga Instructors, Wellness Coaches, Therapists, Yoga
+            Therapists, or start their own yoga studio. Higher studies include M.Sc Yoga or specialized training.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
-          <h3 class="font-semibold text-lg text-brand-700">Are there scholarships available for yoga students?</h3>
-          <p class="mt-2 text-slate-600">Yes, various scholarships are available including merit-based, state government scholarships, and those for SC/ST/OBC students.</p>
+          <h3 class="font-semibold text-lg text-brand-700">Are scholarships available for yoga students?</h3>
+          <p class="mt-2 text-slate-600">Yes, institutes and government bodies offer merit-based scholarships, AYUSH
+            scholarships, and support for SC/ST/OBC students.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
-          <h3 class="font-semibold text-lg text-brand-700">What is the average salary after B.Yoga?</h3>
-          <p class="mt-2 text-slate-600">Fresh graduates can earn ₹2-5 lakhs per annum. With experience and certification, salaries can go up to ₹8-15 lakhs.</p>
+          <h3 class="font-semibold text-lg text-brand-700">What is the average salary after completing yoga programs?
+          </h3>
+          <p class="mt-2 text-slate-600">Fresh graduates can earn ₹2-5 lakhs per year. Experienced instructors, wellness
+            coaches, or therapists can earn ₹6-12 lakhs per year depending on expertise and location.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
-          <h3 class="font-semibold text-lg text-brand-700">Can I do M.Yoga without B.Yoga?</h3>
-          <p class="mt-2 text-slate-600">Some universities allow admission to M.Yoga with bachelor's in related fields like Physical Education, Psychology, or Health Sciences.</p>
+          <h3 class="font-semibold text-lg text-brand-700">Can I pursue yoga courses without prior experience?</h3>
+          <p class="mt-2 text-slate-600">Yes, many diploma and degree programs accept beginners. Teacher Training
+            Certification (TTC) courses often start from basic levels.</p>
         </div>
         <div class="bg-white border rounded-2xl p-6 reveal">
-          <h3 class="font-semibold text-lg text-brand-700">What are the top private yoga colleges in India?</h3>
-          <p class="mt-2 text-slate-600">Some reputed private colleges include Patanjali University, Swami Rama Himalayan University, and S-VYASA University.</p>
+          <h3 class="font-semibold text-lg text-brand-700">What are the top private yoga institutes in India?</h3>
+          <p class="mt-2 text-slate-600">Reputed institutes include Swami Vivekananda Yoga Anusandhan Sansthan
+            (S-VYASA), Morarji Desai National Institute of Yoga, Patanjali University, Amrita University, and Jain
+            Vishva Bharati University.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-10">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-6">
-        <div>
-          <h3 class="font-bold text-lg mb-4">College Wallah</h3>
-          <p class="text-slate-300">Your trusted partner for yoga admissions in India. Free counseling and expert guidance.</p>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg mb-4">Quick Links</h3>
-          <ul class="space-y-2 text-slate-300">
-            <li><a href="#yoga-courses" class="hover:text-white">Yoga Courses</a></li>
-            <li><a href="#eligibility" class="hover:text-white">Eligibility</a></li>
-            <li><a href="#top-colleges" class="hover:text-white">Top Colleges</a></li>
-            <li><a href="#process" class="hover:text-white">Admission Process</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg mb-4">Contact</h3>
-          <ul class="space-y-2 text-slate-300">
-            <li>📞 +91-83177-95774</li>
-            <li>💬 WhatsApp: +91-83177-95774</li>
-            <li>📧 info@collegewallah.com</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg mb-4">Follow Us</h3>
-          <div class="flex space-x-4">
-            <a href="#" class="text-slate-300 hover:text-white">Facebook</a>
-            <a href="#" class="text-slate-300 hover:text-white">Instagram</a>
-            <a href="#" class="text-slate-300 hover:text-white">LinkedIn</a>
+  <!-- CTA  -->
+  <section class="w-full bg-purple-900 text-white overflow-hidden border-b-4 border-amber-500" id="cta-yoga">
+    <div class="max-w-7xl mx-auto px-6 py-8 md:py-10">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+
+        <!-- Left Content -->
+        <div class="max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/20 text-amber-400 rounded-md text-xs font-bold uppercase tracking-wider mb-3">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+            </span>
+            Admissions Open 2026
           </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+            Top <span class="text-amber-500">Yoga Colleges & Institutes</span> in India
+          </h2>
+
+          <p class="text-slate-300 mt-2 text-base md:text-lg">
+            Expert counseling and guaranteed admission support for B.Yoga, M.Yoga, Diploma & Teacher Training courses by
+            <strong>College Wallah</strong>.
+          </p>
         </div>
-      </div>
-      <div class="border-t border-slate-700 mt-8 pt-6 text-center text-slate-400">
-        <p>&copy; 2024 College Wallah. All rights reserved. | Disclaimer: Information is for educational purposes only.</p>
+
+        <!-- Right Buttons / Stats -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 lg:gap-8">
+
+          <div class="hidden xl:flex items-center gap-6 border-r border-slate-700 pr-8 mr-2">
+            <div class="text-center">
+              <p class="text-xl font-bold text-white">60+</p>
+              <p class="text-xs text-slate-400 uppercase">Colleges</p>
+            </div>
+            <div class="text-center">
+              <p class="text-xl font-bold text-white">Free</p>
+              <p class="text-xs text-slate-400 uppercase">Counseling</p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 w-full sm:w-auto">
+            <button id="openApplyYoga"
+              class="flex-1 sm:flex-none px-8 py-3 bg-amber-600 hover:bg-amber-500 text-white font-bold rounded-lg transition-all shadow-lg shadow-amber-900/20">
+              Apply Now
+            </button>
+
+            <a href="tel:+918317795774"
+              class="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-all border border-slate-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- 3 Steps Admission Section -->
+  <div class="w-full bg-white border-y border-slate-100 py-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+
+        <h4 class="text-xl font-bold text-slate-800 md:w-1/4">
+          Get Admission in 3 Easy Steps:
+        </h4>
+
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center font-bold">1</span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>Free Counseling:</strong> Discuss your B.Yoga, M.Yoga, or Yoga Teacher Training career goals with
+              our experts.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center font-bold">2</span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>Shortlisting:</strong> Choose from top yoga colleges and institutes approved by recognized boards.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center font-bold">3</span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>Final Admission:</strong> We handle applications, course selection, and documentation for you.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t" id="footer">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-6 text-sm">
+      <div>
+        <p class="font-bold">College Wallah</p>
+        <p class="mt-2 text-slate-600">PAN‑India agriculture College Admission Assistance.</p>
+      </div>
+      <div>
+        <p class="font-semibold">Contact</p>
+        <p class="mt-2"><a href="tel:+918317795774" class="hover:underline">+91‑83177-95774</a></p>
+        <p><a href="mailto:apremraj9570raj@gmail.com" class="hover:underline">apremraj9570raj@gmail.com</a></p>
+        <p><a target="_blank" rel="noopener" href="https://wa.me/918317795774" class="hover:underline">WhatsApp</a>
+        </p>
+      </div>
+      <div>
+        <p class="font-semibold">Company</p>
+        <ul class="mt-2 space-y-1">
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+          <li><a href="#" class="hover:underline">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold">Follow</p>
+        <ul class="mt-2 space-y-1">
+          <li><a href="#" class="hover:underline">Instagram</a></li>
+          <li><a href="#" class="hover:underline">YouTube</a></li>
+          <li><a href="#" class="hover:underline">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-xs text-slate-500 pb-8">© <span id="year"></span> All‑India College Admissions</div>
   </footer>
 
-  <!-- JS -->
   <script>
-    const modal = document.getElementById('applyModal');
-    const openBtns = [document.getElementById('openApplyBtn'), document.getElementById('openApply')];
-    const closeBtn = document.getElementById('closeModal');
+    // reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show') })
+    }, { threshold: 0.1 })
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 
-    openBtns.forEach(btn => {
-      if (btn) {
-        btn.addEventListener('click', () => {
-          modal.classList.remove('hidden');
-        });
-      }
-    });
-
-    closeBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-    });
-
-    // Close modal when clicking outside
-    window.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-      }
-    });
-
-    // Slider functionality
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
-    slides[currentSlide].classList.add('active');
+    // Simple fade slider (15 images) – changes every 3s
+    const slides = Array.from(document.querySelectorAll('.slide'))
+    let idx = 0
     setInterval(() => {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }, 3000);
+      slides[idx].classList.remove('active')
+      idx = (idx + 1) % slides.length
+      slides[idx].classList.add('active')
+    }, 3000)
 
-    // Form submission
+    // Modal functionality
+    const modal = document.getElementById('applyModal')
+    const openApply = document.getElementById('openApply')
+    const openApplyBtn = document.getElementById('openApplyBtn')
+    const closeModal = document.getElementById('closeModal')
+
+    function openModal() {
+      modal.classList.remove('hidden')
+    }
+
+    function closeModalFunc() {
+      modal.classList.add('hidden')
+    }
+
+    openApply.addEventListener('click', openModal)
+    openApplyBtn.addEventListener('click', openModal)
+    closeModal.addEventListener('click', closeModalFunc)
+
+    // Close modal on outside click
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        closeModalFunc()
+      }
+    })
+
+    // form inline success (AJAX optional)
     const form = document.getElementById('applyForm');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      document.getElementById('formMsg').classList.remove('hidden');
-    });
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent default form submission
+      // Simulate form submission success
+      msg.classList.remove('hidden');
+      form.reset();
+      // Optionally close modal after submission
+      setTimeout(() => {
+        closeModalFunc();
+        msg.classList.add('hidden');
+      }, 3000);
+    })
 
-    // Reveal animations
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    });
-    reveals.forEach(reveal => observer.observe(reveal));
+    // copyright year
+    document.getElementById('year').textContent = new Date().getFullYear()
   </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="../assete/js/unilist.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderUniversities("universityGrid");
+    });
+  </script>
+  <!-- from agriculture.html (inside course folder) -->
+  <script src="../assete/js/collegeCard.js"></script>
+  <script src="../assete/js/colleges/yoga.js"></script>
+  <script src="../assete/js/main.js"></script>
 </body>
+
 </html>

@@ -21,7 +21,7 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assete/js/tailwindcss.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -34,6 +34,7 @@
       }
     }
   </script>
+
 
   <!-- Schema: Organization + FAQ -->
   <script type="application/ld+json">
@@ -65,35 +66,6 @@
   }
   </script>
 
-  <style>
-    .reveal {
-      opacity: 0;
-      transform: translateY(8px);
-      transition: opacity .7s ease, transform .7s ease
-    }
-
-    .reveal.show {
-      opacity: 1;
-      transform: translateY(0)
-    }
-
-    /* Simple fade carousel */
-    .slider {
-      position: relative;
-      height: 420px
-    }
-
-    .slide {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transition: opacity 800ms ease
-    }
-
-    .slide.active {
-      opacity: 1
-    }
-  </style>
 </head>
 
 <body class="antialiased text-slate-800 bg-white">
@@ -123,13 +95,13 @@
         </span>
       </a>
       <nav class="hidden md:flex items-center gap-8 font-medium">
-        <a href="index.html" class="hover:text-brand-700">Home</a>
-        <a href="#architecture-courses" class="hover:text-brand-700">Architecture Courses</a>
-        <a href="#eligibility" class="hover:text-brand-700">Eligibility</a>
+        <!-- <a href="index.html" class="hover:text-brand-700">Home</a> -->
+        <!-- <a href="#architecture-courses" class="hover:text-brand-700">Architecture Courses</a> -->
+        <a href="#eligibility" class="hover:text-brand-700">Courses</a>
         <a href="#top-colleges" class="hover:text-brand-700">Top Colleges</a>
         <a href="#process" class="hover:text-brand-700">Process</a>
-        <a href="#apply" id="openApply" class="hover:text-brand-700 cursor-pointer">Apply</a>
         <a href="#faq" class="hover:text-brand-700">FAQ</a>
+        <a href="#apply" id="openApply" class="hover:text-brand-700 cursor-pointer">Apply</a>
       </nav>
       <div class="flex items-center gap-3">
         <button id="openApplyBtn"
@@ -142,24 +114,37 @@
 
   <!-- Popup Modal -->
   <div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
-    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg p-6 relative">
-      <!-- Close Button -->
-      <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-red-600 text-2xl">&times;</button>
+    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg relative">
 
-      <h2 class="text-xl font-bold mb-4">Apply for Architecture Admission</h2>
-      <form id="applyForm" class="space-y-4">
-        <input type="hidden" name="subject" value="New Architecture Admission Lead" />
+      <div
+        class="bg-slate-50 w-full p-6 rounded-t-[2.5rem] border-b border-slate-100 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-black text-slate-900 ">Career Counseling 2026</h2>
+            <p class="text-[10px] text-blue-600 font-bold uppercase">Direct Admission Guidance</p>
+          </div>
+        </div>
+        <button id="closeModal"
+          class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center hover:bg-blue-600 hover:text-white justify-center text-slate-400 hover:text-red-500 transition-colors TEX">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <form id="applyForm" class="space-y-4 p-6 ">
+        <input type="hidden" name="subject" value="New agriculture Admission Lead" />
 
         <div>
           <label class="block text-sm font-medium">Full Name *</label>
-          <input name="name" required class="mt-1 w-full rounded-xl border p-2" placeholder="Prem Kumar" />
+          <input name="name" required class=" w-full rounded-xl border p-2" placeholder="Enter your full name" />
         </div>
-
         <div class="grid sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-sm font-medium">Phone *</label>
             <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2"
-              placeholder="8317795774" />
+              placeholder="Enter Your 10-digit Number" />
           </div>
           <div>
             <label class="block text-sm font-medium">Email</label>
@@ -206,8 +191,6 @@
   </div>
 
 
-
-
   <!-- Hero -->
   <section class="bg-gradient-to-b from-brand-50 to-white">
     <div class="max-w-7xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
@@ -238,23 +221,20 @@
         </div>
 
         <div class="relative overflow-hidden rounded-[2.5rem] shadow-2xl border-8 border-white">
-          <div class="slider  relative overflow-hidden bg-slate-200">
-            <img class="slide object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+          <div class="  relative overflow-hidden bg-slate-200">
+            <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
               src="../assete/agri.webp" alt="Architecture Students Model Discussion" />
-
-            <img class="slide absolute inset-0 object-cover w-full h-full opacity-0" src="../assete/agri1.webp"
-              alt="College Campus" />
           </div>
 
           <div
             class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-white/50">
 
             <p class="text-xs text-brand-600 uppercase tracking-widest font-bold">
-              Agriculture Career Path
+              Architecture Career Path
             </p>
 
             <h3 class="text-lg font-bold text-slate-900 mt-1">
-              Build Your Future in Modern Agriculture
+              Build Your Future in Modern Architecture
             </h3>
 
             <div class="mt-4 grid grid-cols-3 gap-3 text-center">
@@ -265,7 +245,7 @@
 
               <div class="bg-slate-50 rounded-xl p-3">
                 <p class="text-lg font-extrabold text-brand-600">30+</p>
-                <p class="text-xs text-slate-500">Agri Roles</p>
+                <p class="text-xs text-slate-500">Architecture Roles</p>
               </div>
 
               <div class="bg-slate-50 rounded-xl p-3">
@@ -281,338 +261,386 @@
   </section>
 
   <!-- Architecture Courses -->
-  <section id="architecture-courses" class="py-14">
-    <div class="max-w-7xl mx-auto px-4">
+  <section id="eligibility" class="py-14">
+    <div class="max-w-7xl mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold">Architecture Degree Courses in India</h2>
-      <p class="mt-2 text-slate-600">Explore undergraduate and postgraduate architecture programs, including design,
+      <p class="my-2 text-slate-600">Explore undergraduate and postgraduate architecture programs, including design,
         planning, and allied fields.</p>
-      <div class="mt-6 grid lg:grid-cols-3 gap-6">
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">Undergraduate Courses</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li><b>B.Arch (Bachelor of Architecture)</b> - 5 years</li>
-            <li><b>B.Des Interior Design</b> - 4 years</li>
-            <li><b>B.Planning (Urban Planning)</b> - 4 years</li>
-            <li><b>B.Sc Landscape Architecture</b> - 4 years</li>
-            <li><b>B.Tech Architectural Engineering</b> - 4 years</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">Postgraduate Courses</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li><b>M.Arch (Master of Architecture)</b> - 2 years</li>
-            <li><b>M.Des Interior Design</b> - 2 years</li>
-            <li><b>M.Planning (Urban Planning)</b> - 2 years</li>
-            <li><b>M.Sc Landscape Architecture</b> - 2 years</li>
-            <li><b>M.Tech Architectural Engineering</b> - 2 years</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">Diploma & Allied</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li><b>Diploma in Architecture</b> - 3 years</li>
-            <li><b>Diploma in Interior Design</b> - 2-3 years</li>
-            <li><b>Ph.D in Architecture</b> - 3-5 years</li>
-            <li><b>Certificate in CAD/Revit</b> - 6 months-1 year</li>
-            <li><b>Short-term Design Courses</b> - 3-6 months</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="grid lg:grid-cols-3 gap-6">
 
-  <!-- Eligibility Criteria -->
-  <section id="eligibility" class="py-14 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">Eligibility & Qualifications for Architecture Courses</h2>
-      <p class="mt-2 text-slate-600">General requirements for admission to architecture degree colleges in India.
-        Specific criteria may vary by college and state.</p>
-      <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">B.Arch (Bachelor of Architecture)</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li>10+2 with PCM, min 50% marks</li>
-            <li>NATA or JEE Paper 2</li>
-            <li>Age: 17-23 years</li>
-            <li>Mathematics compulsory</li>
-          </ul>
+        <!-- Undergraduate Card -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm reveal">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-1.5 h-8 bg-indigo-600 rounded-full"></div>
+            <h3 class="font-bold text-xl text-slate-800">Undergraduate Courses</h3>
+          </div>
+
+          <div class="space-y-2">
+            <!-- Always visible -->
+            <div class=" p-4 rounded-2xl border border-slate-100">
+              <div class="flex justify-between items-center mb-1">
+                <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                  B.Arch (Architecture)
+                </h4>
+                <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                  5 YEARS
+                </span>
+              </div>
+              <ul class="text-xs text-slate-500 space-y-1">
+                <li><span class="font-semibold text-indigo-600">Qualification:</span> 10+2 with PCM (Min 50%)</li>
+                <li><span class="font-semibold text-indigo-600">Entrance:</span> NATA / JEE Main Paper-2</li>
+                <li><span class="font-semibold text-indigo-600">Age:</span> As per COA norms</li>
+              </ul>
+
+            </div>
+
+            <!-- Always visible -->
+            <div class="p-4 rounded-2xl border border-slate-100">
+              <div class="flex justify-between items-center mb-1">
+                <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                  B.Des Interior Design
+                </h4>
+                <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                  4 YEARS
+                </span>
+              </div>
+              <ul class="text-xs text-slate-500 space-y-1">
+                <li><span class="font-semibold text-indigo-600">Qualification:</span> 10+2 (Any stream)</li>
+                <li><span class="font-semibold text-indigo-600">Entrance:</span> College / Design Aptitude Test</li>
+                <li><span class="font-semibold text-indigo-600">Age:</span> No strict limit</li>
+              </ul>
+            </div>
+
+            <!-- Hidden Courses -->
+            <div id="ug-more" class="hidden space-y-5">
+
+              <div class="p-4 rounded-2xl border border-slate-100">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                    B.Planning (Urban Planning)
+                  </h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                    4 YEARS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-500 space-y-1">
+                  <li><span class="font-semibold text-indigo-600">Qualification:</span> 10+2 with Maths</li>
+                  <li><span class="font-semibold text-indigo-600">Entrance:</span> JEE Main / University Test</li>
+                  <li><span class="font-semibold text-indigo-600">Age:</span> As per institute norms</li>
+                </ul>
+              </div>
+
+              <div class="p-4 rounded-2xl border border-slate-100">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                    B.Sc Landscape Architecture
+                  </h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                    4 YEARS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-500 space-y-1">
+                  <li><span class="font-semibold text-indigo-600">Qualification:</span> 10+2 (Science preferred)</li>
+                  <li><span class="font-semibold text-indigo-600">Entrance:</span> Merit / Aptitude Test</li>
+                  <li><span class="font-semibold text-indigo-600">Age:</span> No strict limit</li>
+                </ul>
+              </div>
+
+              <div class="p-4 rounded-2xl border border-slate-100">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                    B.Tech Architectural Engineering
+                  </h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                    4 YEARS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-500 space-y-1">
+                  <li><span class="font-semibold text-indigo-600">Qualification:</span> 10+2 with PCM</li>
+                  <li><span class="font-semibold text-indigo-600">Entrance:</span> JEE Main / State CET</li>
+                  <li><span class="font-semibold text-indigo-600">Age:</span> As per engineering norms</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- View More Button -->
+            <button onclick="toggleView('ug-more', this)"
+              class="text-indigo-600 text-sm font-semibold hover:underline ">
+              View More
+            </button>
+
+          </div>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">B.Des Interior Design</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li>10+2 any stream, min 50% marks</li>
-            <li>Design aptitude test or merit-based</li>
-            <li>Age: 17-23 years</li>
-            <li>Creative portfolio preferred</li>
-          </ul>
+
+        <!-- Postgraduate Card -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm reveal">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-1.5 h-8 bg-emerald-600 rounded-full"></div>
+            <h3 class="font-bold text-xl text-slate-800">Postgraduate Courses</h3>
+          </div>
+
+          <div class="space-y-2">
+
+            <!-- Always visible -->
+            <div class="p-4 rounded-2xl border border-slate-100">
+              <div class="flex justify-between items-center mb-1">
+                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                  M.Arch (Architecture)
+                </h4>
+                <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                  2 YEARS
+                </span>
+              </div>
+              <ul class="text-xs text-slate-500 space-y-1">
+                <li><span class="font-semibold text-emerald-600">Qualification:</span> B.Arch degree (50–55%)</li>
+                <li><span class="font-semibold text-emerald-600">Entrance:</span> GATE / University Exam</li>
+                <li><span class="font-semibold text-emerald-600">Age:</span> No upper limit</li>
+              </ul>
+
+            </div>
+
+            <!-- Always visible -->
+            <div class="p-4 rounded-2xl border border-slate-100">
+              <div class="flex justify-between items-center mb-1">
+                <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                  M.Des Interior Design
+                </h4>
+                <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                  2 YEARS
+                </span>
+              </div>
+              <ul class="text-xs text-slate-500 space-y-1">
+                <li><span class="font-semibold text-emerald-600">Qualification:</span> Bachelor’s Degree in
+                  Design/Architecture</li>
+                <li><span class="font-semibold text-emerald-600">Entrance:</span> CEED / University Exam</li>
+                <li><span class="font-semibold text-emerald-600">Age:</span> No limit</li>
+              </ul>
+            </div>
+
+            <!-- Hidden PG Courses -->
+            <div id="pg-more" class="hidden space-y-5">
+
+              <div class="p-4 rounded-2xl border border-slate-100">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                    M.Planning (Urban Planning)
+                  </h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                    2 YEARS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-500 space-y-1">
+                  <li><span class="font-semibold text-emerald-600">Qualification:</span> B.Arch / B.Planning / Civil
+                    Engg.</li>
+                  <li><span class="font-semibold text-emerald-600">Entrance:</span> GATE / University Test</li>
+                  <li><span class="font-semibold text-emerald-600">Age:</span> As per institute norms</li>
+                </ul>
+              </div>
+
+              <div class="p-4 rounded-2xl border border-slate-100">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                    M.Sc Landscape Architecture
+                  </h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                    2 YEARS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-500 space-y-1">
+                  <li><span class="font-semibold text-emerald-600">Qualification:</span> B.Arch / B.Sc / B.Plan</li>
+                  <li><span class="font-semibold text-emerald-600">Entrance:</span> University / Merit Based</li>
+                  <li><span class="font-semibold text-emerald-600">Age:</span> No strict limit</li>
+                </ul>
+              </div>
+
+              <div class="p-4 rounded-2xl border border-slate-100">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                    M.Tech Architectural Engineering
+                  </h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">
+                    2 YEARS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-500 space-y-1">
+                  <li><span class="font-semibold text-emerald-600">Qualification:</span> B.Tech / B.E
+                    (Civil/Architecture)</li>
+                  <li><span class="font-semibold text-emerald-600">Entrance:</span> GATE / State Exam</li>
+                  <li><span class="font-semibold text-emerald-600">Age:</span> As per university rules</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- View More Button -->
+            <button onclick="toggleView('pg-more', this)"
+              class="text-emerald-600 text-sm font-semibold hover:underline ">
+              View More
+            </button>
+
+          </div>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">B.Planning (Urban Planning)</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li>10+2 with PCM, min 50% marks</li>
-            <li>JEE Main or state CETs</li>
-            <li>Age: 17-23 years</li>
-            <li>Mathematics compulsory</li>
-          </ul>
+
+
+        <!-- Diploma & Allied Card -->
+        <div class="bg-slate-900 rounded-3xl p-6 shadow-xl reveal">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-1.5 h-8 bg-lime-400 rounded-full"></div>
+            <h3 class="font-bold text-xl text-white">Diploma & Allied Courses</h3>
+          </div>
+
+          <div class="space-y-5">
+
+            <!-- Always visible -->
+            <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+              <div class="flex justify-between items-center mb-1">
+                <h4 class="font-bold text-lime-400 text-sm">Diploma in Architecture</h4>
+                <span class="text-[10px] font-bold text-slate-400 bg-slate-700 px-2 py-0.5 rounded">
+                  3 YEARS
+                </span>
+              </div>
+              <ul class="text-xs text-slate-300 space-y-1">
+                <li><span class="text-lime-400 font-semibold">Qualification:</span> 10th Pass</li>
+                <li><span class="text-lime-400 font-semibold">Entrance:</span> Merit Based</li>
+                <li><span class="text-lime-400 font-semibold">Age:</span> 15+ Years</li>
+              </ul>
+            </div>
+
+            <!-- Always visible -->
+            <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+              <div class="flex justify-between items-center mb-1">
+                <h4 class="font-bold text-lime-400 text-sm">Diploma in Interior Design</h4>
+                <span class="text-[10px] font-bold text-slate-400 bg-slate-700 px-2 py-0.5 rounded">
+                  2–3 YEARS
+                </span>
+              </div>
+              <ul class="text-xs text-slate-300 space-y-1">
+                <li><span class="text-lime-400 font-semibold">Qualification:</span> 10th / 12th Pass</li>
+                <li><span class="text-lime-400 font-semibold">Entrance:</span> Institute Level</li>
+                <li><span class="text-lime-400 font-semibold">Age:</span> Open</li>
+              </ul>
+            </div>
+
+            <!-- Hidden courses -->
+            <div id="diploma-more" class="hidden space-y-5">
+
+              <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-lime-400 text-sm">Ph.D in Architecture</h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-700 px-2 py-0.5 rounded">
+                    3–5 YEARS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-300 space-y-1">
+                  <li><span class="text-lime-400 font-semibold">Qualification:</span> M.Arch / Equivalent</li>
+                  <li><span class="text-lime-400 font-semibold">Entrance:</span> UGC-NET / University Test</li>
+                  <li><span class="text-lime-400 font-semibold">Age:</span> No limit</li>
+                </ul>
+              </div>
+
+              <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-lime-400 text-sm">Certificate in CAD / Revit</h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-700 px-2 py-0.5 rounded">
+                    6–12 MONTHS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-300 space-y-1">
+                  <li><span class="text-lime-400 font-semibold">Qualification:</span> 10th / 12th Pass</li>
+                  <li><span class="text-lime-400 font-semibold">Entrance:</span> No Exam</li>
+                  <li><span class="text-lime-400 font-semibold">Age:</span> Open</li>
+                </ul>
+              </div>
+
+              <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+                <div class="flex justify-between items-center mb-1">
+                  <h4 class="font-bold text-lime-400 text-sm">Short-term Design Courses</h4>
+                  <span class="text-[10px] font-bold text-slate-400 bg-slate-700 px-2 py-0.5 rounded">
+                    3–6 MONTHS
+                  </span>
+                </div>
+                <ul class="text-xs text-slate-300 space-y-1">
+                  <li><span class="text-lime-400 font-semibold">Qualification:</span> Any background</li>
+                  <li><span class="text-lime-400 font-semibold">Entrance:</span> No Exam</li>
+                  <li><span class="text-lime-400 font-semibold">Age:</span> Open</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- View More Button -->
+            <button onclick="toggleView('diploma-more', this)"
+              class="text-lime-400 text-sm font-semibold hover:underline">
+              View More
+            </button>
+
+          </div>
         </div>
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">B.Sc Landscape Architecture</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li>10+2 with PCB/PCM, min 50% marks</li>
-            <li>Merit-based or entrance exams</li>
-            <li>Age: 17-23 years</li>
-            <li>Biology/Art preferred</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">B.Tech Architectural Engineering</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li>10+2 with PCM, min 50% marks</li>
-            <li>JEE Main or state CETs</li>
-            <li>Age: 17-23 years</li>
-            <li>Mathematics compulsory</li>
-          </ul>
-        </div>
-        <div class="p-6 bg-white border rounded-2xl reveal">
-          <h3 class="font-semibold text-lg">M.Arch (Master of Architecture)</h3>
-          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-            <li>B.Arch degree, min 50% marks</li>
-            <li>GATE or university entrance</li>
-            <li>Age: No upper limit</li>
-            <li>Portfolio required</li>
-          </ul>
-        </div>
-      </div>
-      <div class="mt-6 p-6 bg-white border rounded-2xl reveal">
-        <h3 class="font-semibold text-lg">Additional Requirements</h3>
-        <ul class="mt-2 text-sm text-slate-600 list-disc list-inside space-y-1">
-          <li>Medical fitness certificate</li>
-          <li>Character certificate from school/college</li>
-          <li>Migration certificate (if applicable)</li>
-          <li>Category certificate for reservations (SC/ST/OBC)</li>
-          <li>Portfolio for design courses</li>
-        </ul>
+
+
       </div>
     </div>
+
+    <script>
+      function toggleView(id, btn) {
+        const box = document.getElementById(id);
+        if (box.classList.contains("hidden")) {
+          box.classList.remove("hidden");
+          btn.innerText = "View Less";
+        } else {
+          box.classList.add("hidden");
+          btn.innerText = "View More";
+        }
+      }
+    </script>
   </section>
 
   <!-- Top Architecture Colleges -->
   <section id="top-colleges" class="py-14">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">Top Architecture Colleges in India</h2>
-      <p class="mt-2 text-slate-600">Leading institutions for architecture education, ranked by NIRF, reputation, and
+      <h2 class="text-2xl md:text-3xl font-bold">Top Agriculture Colleges in India</h2>
+      <p class="mt-2 text-slate-600">Leading institutions for agriculture education, ranked by NIRF, reputation, and
         facilities.</p>
-      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 New Delhi</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">School of Planning and Architecture (SPA)</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1959 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 50% marks, NATA/JEE Paper 2</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Kharagpur, West Bengal</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Indian Institute of Technology (IIT Kharagpur)</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1951 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 75% marks, JEE Paper 2</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Roorkee, Uttarakhand</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Indian Institute of Technology (IIT Roorkee)</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1847 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 75% marks, JEE Paper 2</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Mumbai, Maharashtra</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Sir J.J. College of Architecture</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1913 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 50% marks, NATA/MHT CET</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Ahmedabad, Gujarat</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">CEPT University</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1962 | Private</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 50% marks, NATA/JEE Paper 2</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Chandigarh</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Chandigarh College of Architecture</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1961 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 50% marks, NATA/JEE Paper 2</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Calicut, Kerala</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">National Institute of Technology (NIT Calicut)</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1961 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 75% marks, JEE Paper 2</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Bhopal, Madhya Pradesh</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Maulana Azad National Institute of Technology (MANIT)</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1960 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 75% marks, JEE Paper 2</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 reveal">
-          <p class="text-sm font-semibold text-gray-600">📍 Jaipur, Rajasthan</p>
-          <h3 class="text-lg font-bold text-gray-800 mt-2">Malaviya National Institute of Technology (MNIT)</h3>
-          <p class="text-yellow-500">⭐⭐⭐⭐⭐</p>
-          <p class="text-sm text-gray-600">Estd: 1963 | Government</p>
-          <p class="text-sm text-gray-600">Approved By: COA, UGC</p>
-          <p class="text-sm text-gray-600">Eligibility: 10+2 PCM, 75% marks, JEE Paper 2</p>
-          <div class="mt-4 flex justify-between">
-            <button class="px-3 py-1 border rounded text-sm text-blue-700 font-medium hover:bg-blue-50">View
-              More</button>
-            <div class="flex space-x-2">
-              <button class="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700">Whatsapp</button>
-              <button class="px-3 py-1 bg-blue-600 text-white text-sm rounded hover:bg-blue-700">Enquiry</button>
-            </div>
-          </div>
-        </div>
+      <div id="collegeGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
   </section>
 
   <!-- Top 50 Private Universities for agriculture -->
-  <section class="py-14 bg-slate-50">
+  <section class="py-12 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">Top 50 Private Universities for Architecture in India</h2>
-      <p class="mt-2 text-slate-600">Popular private universities offering architecture programs (B.Arch, M.Arch,
-        Interior Design, etc.), based on reputation, placements, and facilities.</p>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <ol class="list-decimal list-inside space-y-2 text-sm text-slate-700">
-          <li>Lovely Professional University - Punjab</li>
-          <li>Chandigarh University - Punjab</li>
-          <li>Amity University - Uttar Pradesh</li>
-          <li>SRM University - Tamil Nadu</li>
-          <li>VIT University - Tamil Nadu</li>
-          <li>Jain University - Karnataka</li>
-          <li>Manipal University - Karnataka</li>
-          <li>Symbiosis International University - Maharashtra</li>
-          <li>Christ University - Karnataka</li>
-          <li>Shiv Nadar University - Uttar Pradesh</li>
-          <li>Bennett University - Uttar Pradesh</li>
-          <li>Galgotias University - Uttar Pradesh</li>
-          <li>Sharda University - Uttar Pradesh</li>
-          <li>Jaypee University - Uttar Pradesh</li>
-          <li>Noida International University - Uttar Pradesh</li>
-          <li>IIMT University - Uttar Pradesh</li>
-          <li>GLA University - Uttar Pradesh</li>
-          <li>Sanskriti University - Uttar Pradesh</li>
-          <li>Mangalayatan University - Uttar Pradesh</li>
-          <li>Rama University - Uttar Pradesh</li>
-          <li>Invertis University - Uttar Pradesh</li>
-          <li>Swami Vivekanand Subharti University - Uttar Pradesh</li>
-          <li>Teerthanker Mahaveer University - Uttar Pradesh</li>
-          <li>IFHE Hyderabad - Telangana</li>
-          <li>KL University - Andhra Pradesh</li>
-        </ol>
-        <ol start="26" class="list-decimal list-inside space-y-2 text-sm text-slate-700">
-          <li>Vignan University - Andhra Pradesh</li>
-          <li>GITAM University - Andhra Pradesh</li>
-          <li>SRM University - Andhra Pradesh</li>
-          <li>VIT-AP University - Andhra Pradesh</li>
-          <li>Centurion University - Odisha</li>
-          <li>KIIT University - Odisha</li>
-          <li>SOA University - Odisha</li>
-          <li>Xavier University - Odisha</li>
-          <li>CV Raman Global University - Odisha</li>
-          <li>Birla Institute of Technology - Jharkhand</li>
-          <li>ICFAI University - Jharkhand</li>
-          <li>Adamas University - West Bengal</li>
-          <li>Brainware University - West Bengal</li>
-          <li>Techno India University - West Bengal</li>
-          <li>University of Engineering & Management - West Bengal</li>
-          <li>JIS University - West Bengal</li>
-          <li>Amity University - West Bengal</li>
-          <li>Amity University - Bihar</li>
-          <li>K.K. University - Bihar</li>
-          <li>Alliance University - Karnataka</li>
-          <li>Presidency University - Karnataka</li>
-          <li>CMR University - Karnataka</li>
-          <li>PES University - Karnataka</li>
-          <li>REVA University - Karnataka</li>
-          <li>Dayananda Sagar University - Karnataka</li>
-        </ol>
+      <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
+
+        <!-- Left content -->
+        <div class="border-b pb-4">
+          <h2 class="text-2xl font-bold text-slate-900">
+            Top Private Engineering Universities in India
+            <span class="text-indigo-600 text-lg align-top font-bold">2026</span>
+          </h2>
+          <p class="text-sm text-slate-500 mt-1">
+            Quick-access list of leading private institutions for admissions.
+          </p>
+        </div>
+
+        <!-- Right button -->
+        <div class="shrink-0">
+          <button class="bg-indigo-600 text-white px-6 py-3 rounded-full font-bold
+             hover:bg-indigo-700 transition-all flex items-center gap-2
+             shadow-lg shadow-indigo-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 005.474 5.474l.772-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+            </svg>
+            Get Admission Guidance
+          </button>
+        </div>
+
       </div>
-      <p class="mt-6 text-sm text-slate-600">Note: Rankings are based on general popularity and may vary. Contact us for
-        detailed admission guidance.</p>
+
+      <div id="universityGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3">
+      </div>
+
+
     </div>
   </section>
 
@@ -718,7 +746,7 @@
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-bold">Frequently Asked Questions</h2>
       <p class="mt-2 text-slate-600">Common questions about architecture admissions, courses, and career prospects.</p>
-      <div class="mt-6 space-y-4">
+      <div class="grid md:grid-cols-2 gap-4">
         <div class="bg-white border rounded-2xl p-6 reveal">
           <h3 class="font-semibold text-lg text-brand-700">What is the eligibility for B.Arch in India?</h3>
           <p class="mt-2 text-slate-600">You need to have completed 10+2 with Physics, Chemistry, Mathematics with
@@ -767,6 +795,105 @@
       </div>
     </div>
   </section>
+  <!-- cta -->
+  <section class="w-full bg-slate-900 text-white overflow-hidden border-b-4 border-emerald-500" id="cta">
+    <div class="max-w-7xl mx-auto px-6 py-8 md:py-10">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+
+        <div class="max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-md text-xs font-bold uppercase tracking-wider mb-3">
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            Architecture Admissions Open 2026
+          </div>
+
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+            Top <span class="text-emerald-500">Architecture Colleges</span> in India
+          </h2>
+
+          <p class="text-slate-400 mt-2 text-base md:text-lg">
+            Get expert guidance for B.Arch admissions, NATA counseling, and college selection by
+            <strong>Meri Shiksha</strong>.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 lg:gap-8">
+          <div class="hidden xl:flex items-center gap-6 border-r border-slate-700 pr-8 mr-2">
+            <div class="text-center">
+              <p class="text-xl font-bold text-white">70+</p>
+              <p class="text-xs text-slate-500 uppercase">Architecture Colleges</p>
+            </div>
+            <div class="text-center">
+              <p class="text-xl font-bold text-white">Free</p>
+              <p class="text-xs text-slate-500 uppercase">NATA Counseling</p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 w-full sm:w-auto">
+            <button id="openApply"
+              class="flex-1 sm:flex-none px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg transition-all shadow-lg shadow-emerald-900/20">
+              Apply Now
+            </button>
+            <a href="tel:+918317795774"
+              class="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-all border border-slate-700">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="w-full bg-white border-y border-slate-100 py-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <h4 class="text-xl font-bold text-slate-800 md:w-1/4">
+          Get B.Arch Admission in 3 Easy Steps:
+        </h4>
+
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+              1
+            </span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>Free Counseling:</strong> Discuss NATA score, design aptitude, and career goals with experts.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+              2
+            </span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>College Shortlisting:</strong> Choose from top COA-approved architecture colleges in India.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold">
+              3
+            </span>
+            <p class="text-sm text-slate-600 mt-1">
+              <strong>Final Admission:</strong> We assist with portfolio guidance, documentation, and seat confirmation.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="border-t">
@@ -801,21 +928,8 @@
     <div class="text-center text-xs text-slate-500 pb-8">© <span id="year"></span> All‑India College Admissions</div>
   </footer>
 
-  <script>
-    // reveal on scroll
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show') })
-    }, { threshold: 0.1 })
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 
-    // Simple fade slider (15 images) – changes every 3s
-    const slides = Array.from(document.querySelectorAll('.slide'))
-    let idx = 0
-    setInterval(() => {
-      slides[idx].classList.remove('active')
-      idx = (idx + 1) % slides.length
-      slides[idx].classList.add('active')
-    }, 3000)
+  <script>
 
     // Modal functionality
     const modal = document.getElementById('applyModal')
@@ -861,12 +975,19 @@
     document.getElementById('year').textContent = new Date().getFullYear()
   </script>
 
-  <!-- GA4 placeholder (replace with your tag) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
-  </script> -->
+    lucide.createIcons();
+  </script>
+  <script src="../assete/js/unilist.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderUniversities("universityGrid");
+    });
+  </script>
+  <script src="../assete/js/collegeCard.js"></script>
+  <script src="../assete/js/colleges/arch.js"></script>
+  <script src="../assete/js/main.js"></script>
 </body>
 
 </html>

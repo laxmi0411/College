@@ -21,7 +21,7 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assete/js/tailwindcss.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -34,6 +34,7 @@
       }
     }
   </script>
+
 
   <!-- Schema: Organization + FAQ -->
   <script type="application/ld+json">
@@ -762,7 +763,7 @@
     </div>
   </div>
   <!-- Footer -->
-  <footer class="border-t">
+  <footer class="border-t" id="footer">
     <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-6 text-sm">
       <div>
         <p class="font-bold">College Wallah</p>
@@ -772,7 +773,8 @@
         <p class="font-semibold">Contact</p>
         <p class="mt-2"><a href="tel:+918317795774" class="hover:underline">+91‑83177-95774</a></p>
         <p><a href="mailto:apremraj9570raj@gmail.com" class="hover:underline">apremraj9570raj@gmail.com</a></p>
-        <p><a target="_blank" rel="noopener" href="https://wa.me/918317795774" class="hover:underline">WhatsApp</a></p>
+        <p><a target="_blank" rel="noopener" href="https://wa.me/918317795774" class="hover:underline">WhatsApp</a>
+        </p>
       </div>
       <div>
         <p class="font-semibold">Company</p>
@@ -793,16 +795,7 @@
     </div>
     <div class="text-center text-xs text-slate-500 pb-8">© <span id="year"></span> All‑India College Admissions</div>
   </footer>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    lucide.createIcons();
-  </script>
-  <script src="../assete/js/unilist.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      renderUniversities("universityGrid");
-    });
-  </script>
+
   <script>
     // reveal on scroll
     const io = new IntersectionObserver((entries) => {
@@ -862,11 +855,20 @@
     // copyright year
     document.getElementById('year').textContent = new Date().getFullYear()
   </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="../assete/js/unilist.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderUniversities("universityGrid");
+    });
+  </script>
   <!-- from agriculture.html (inside course folder) -->
   <script src="../assete/js/collegeCard.js"></script>
   <script src="../assete/js/colleges/agri.js"></script>
   <script src="../assete/js/main.js"></script>
-
 
   <!-- GA4 placeholder (replace with your tag) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
