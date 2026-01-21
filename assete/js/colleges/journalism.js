@@ -1,4 +1,4 @@
-const journalismColleges = [
+const colleges = [
     { name: "Indian Institute of Mass Communication (IIMC)", location: "New Delhi", rating: "4.8", estd: "1965", type: "Central University", approvals: "UGC", link: "#" },
     { name: "Asian College of Journalism", location: "Chennai, Tamil Nadu", rating: "4.7", estd: "1994", type: "Private College", approvals: "UGC", link: "#" },
     { name: "Jamia Millia Islamia – AJK Mass Communication Research Centre", location: "New Delhi", rating: "4.7", estd: "1982", type: "Central University", approvals: "UGC", link: "#" },

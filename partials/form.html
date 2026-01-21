@@ -1,0 +1,76 @@
+<!-- Common Apply Modal -->
+<div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
+    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg relative">
+
+        <!-- Header -->
+        <div
+            class="bg-slate-50 w-full p-6 rounded-t-[2.5rem] border-b border-slate-100 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+                    <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h2 class="text-lg font-black text-slate-900">Career Counseling 2026</h2>
+                    <p class="text-[10px] text-blue-600 font-bold uppercase">Direct Admission Guidance</p>
+                </div>
+            </div>
+            <button id="closeModal"
+                class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center hover:bg-blue-600 hover:text-white justify-center text-slate-400 transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+
+        <!-- Form -->
+        <form id="applyForm" class="space-y-4 p-6">
+            <input type="hidden" name="subject" value="New Admission Lead" />
+            <div>
+                <label class="block text-sm font-medium">Full Name *</label>
+                <input name="name" required class="w-full rounded-xl border p-2" placeholder="Enter your full name" />
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium">Phone *</label>
+                    <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2"
+                        placeholder="Enter Your 10-digit Number" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Email</label>
+                    <input type="email" name="email" class="mt-1 w-full rounded-xl border p-2"
+                        placeholder="you@example.com" />
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium">State</label>
+                    <input name="state" class="mt-1 w-full rounded-xl border p-2" placeholder="Rajasthan" />
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Interested Course *</label>
+                    <select id="courseSelect" name="course" required class="mt-1 w-full rounded-xl border p-2">
+                        <option>B.Arch</option>
+                        <option>M.Arch</option>
+                        <option>B.Des Interior Design</option>
+                        <option>B.Planning</option>
+                        <option>B.Sc Landscape agriculture</option>
+                        <option>B.Tech Architectural Engineering</option>
+                        <option>Diploma in agriculture</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium">Message</label>
+                <textarea name="message" rows="3" class="mt-1 w-full rounded-xl border p-2"
+                    placeholder="Intrested University / College, Entrance score, budget, city preference…"></textarea>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-slate-600">
+                <input id="consent" type="checkbox" required class="rounded" />
+                <label for="consent">I agree to be contacted via call/WhatsApp/SMS.</label>
+            </div>
+            <button
+                class="mt-2 w-full px-5 py-3 rounded-2xl bg-blue-600 text-white hover:bg-blue-700 shadow">Submit</button>
+            <p id="formMsg" class="text-sm text-green-700 hidden">Thank you! We will contact you shortly.</p>
+        </form>
+    </div>
+</div>

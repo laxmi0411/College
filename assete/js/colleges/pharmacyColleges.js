@@ -1,4 +1,4 @@
-const pharmacyColleges = [
+const colleges = [
     { name: "Jamia Hamdard – Faculty of Pharmacy", location: "New Delhi", rating: "4.7", estd: "1989", type: "Private University", approvals: "PCI, UGC", link: "#" },
     { name: "National Institute of Pharmaceutical Education and Research (NIPER)", location: "Mohali, Punjab", rating: "4.8", estd: "1998", type: "Central University", approvals: "UGC, AICTE, PCI", link: "#" },
     { name: "Delhi Institute of Pharmaceutical Sciences & Research", location: "New Delhi", rating: "4.6", estd: "1964", type: "Government College", approvals: "UGC, PCI", link: "#" },

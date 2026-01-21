@@ -1,7 +1,7 @@
 
-
+//collegeCard.js
 function collegeCard(c) {
-    return `
+  return `
   <div class="group relative bg-white border border-gray-200 rounded-[1.5rem] p-5 transition-all hover:shadow-xl hover:border-blue-400">
 
     <div class="flex justify-between items-start mb-4">

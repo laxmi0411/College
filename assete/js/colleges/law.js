@@ -1,4 +1,4 @@
-const lawColleges = [
+const colleges = [
     { name: "National Law School of India University (NLSIU)", location: "Bengaluru, Karnataka", rating: "4.9", estd: "1987", type: "Government University", approvals: "UGC, BCI", link: "#" },
     { name: "NALSAR University of Law", location: "Hyderabad, Telangana", rating: "4.8", estd: "1998", type: "Central University", approvals: "UGC, BCI", link: "#" },
     { name: "The West Bengal National University of Juridical Sciences (WBNUJS)", location: "Kolkata, West Bengal", rating: "4.7", estd: "1999", type: "Central University", approvals: "UGC, BCI", link: "#" },

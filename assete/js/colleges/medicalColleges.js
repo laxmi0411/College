@@ -1,4 +1,4 @@
-const medicalColleges = [
+const colleges = [
     { name: "All India Institute of Medical Sciences (AIIMS)", location: "New Delhi", rating: "4.9", estd: "1956", type: "Central University", approvals: "UGC, MCI", link: "#" },
     { name: "Christian Medical College (CMC)", location: "Vellore, Tamil Nadu", rating: "4.8", estd: "1900", type: "Private College", approvals: "UGC, MCI", link: "#" },
     { name: "Maulana Azad Medical College", location: "New Delhi", rating: "4.7", estd: "1958", type: "Government College", approvals: "UGC, MCI", link: "#" },
