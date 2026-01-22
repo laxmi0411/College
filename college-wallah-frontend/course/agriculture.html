@@ -869,11 +869,12 @@
       </div>
 
       <!-- FORM -->
-      <form id="applyForm" class="p-6 space-y-4">
+      <form id="applyForm" class="p-6 space-y-4" onsubmit="submitLead(event)">
 
         <!-- AUTO FILLED -->
         <input type="hidden" id="streamInput" name="stream">
         <input type="hidden" name="source" value="Website Lead">
+
 
         <div>
           <label class="block text-sm font-medium">Full Name *</label>
@@ -926,6 +927,7 @@
       </form>
     </div>
   </div>
+  <script src="../assete/js/submitLead.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
