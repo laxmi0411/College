@@ -10,6 +10,7 @@ n
     content="Explore education colleges in India offering BA, B.Ed, BA B.Ed, BSc courses. Eligibility, qualifications, top colleges, entrance exams, and free admission counseling." />
   <link rel="canonical" href="https://www.yourdomain.com/education.html" />
   <link rel="icon" href="/favicon.ico" />
+  <script src="../assete/js/submitLead.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Open Graph / Twitter -->
@@ -810,7 +811,7 @@ n
       </div>
 
       <!-- FORM -->
-      <form id="applyForm" class="px-6 py-3 space-y-2">
+      <form id="applyForm" onsubmit="submitLead(event)" class="px-6 py-3 space-y-2">
 
         <!-- AUTO FILLED -->
         <input type="hidden" id="streamInput" name="stream">
@@ -872,6 +873,7 @@ n
       </form>
     </div>
   </div>
+  <script src="../assete/js/submitLead.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();

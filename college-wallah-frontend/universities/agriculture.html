@@ -8,6 +8,7 @@
     content="Explore agriculture degree colleges in India: B.Sc Agriculture, Horticulture, Forestry, Dairy, Fisheries, Agri Engineering. Eligibility, qualifications, top colleges, ICAR guidance, and free admission counseling." />
   <link rel="canonical" href="https://www.yourdomain.com/agriculture.html" />
   <link rel="icon" href="/favicon.ico" />
+  <script src="../assete/js/submitLead.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Open Graph / Twitter -->
@@ -146,7 +147,7 @@
       <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-red-600 text-2xl">&times;</button>
 
       <h2 class="text-xl font-bold mb-4">Apply for Agriculture Admission</h2>
-      <form id="applyForm" class="space-y-4">
+      <form id="applyForm" onsubmit="submitLead(event)" class="space-y-4">
         <input type="hidden" name="subject" value="New Agriculture Admission Lead" />
 
         <div>

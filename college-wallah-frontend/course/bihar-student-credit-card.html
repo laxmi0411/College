@@ -1,41 +1,53 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bihar Student Credit Card Scheme - Education Loan Details</title>
-  <meta name="description" content="Comprehensive guide to Bihar Student Credit Card Scheme: eligibility, loan amount, interest rates, application process, and benefits for Bihar students pursuing higher education." />
+  <meta name="description"
+    content="Comprehensive guide to Bihar Student Credit Card Scheme: eligibility, loan amount, interest rates, application process, and benefits for Bihar students pursuing higher education." />
   <link rel="canonical" href="https://www.yourdomain.com/bihar-student-credit-card.html" />
   <link rel="icon" href="/favicon.ico" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Bihar Student Credit Card Scheme" />
-  <meta property="og:description" content="Education finance up to ₹4 Lakh with low interest — supporting Bihar students to pursue higher studies without financial stress." />
+  <meta property="og:description"
+    content="Education finance up to ₹4 Lakh with low interest — supporting Bihar students to pursue higher studies without financial stress." />
   <meta property="og:image" content="https://www.yourdomain.com/og-cover.jpg" />
   <meta property="og:url" content="https://www.yourdomain.com/bihar-student-credit-card.html" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assete/js/tailwindcss.js"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            brand: {50: '#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#5254eb',700:'#4338ca',800:'#3730a3',900:'#312e81'}
+            brand: { 50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc', 400: '#818cf8', 500: '#6366f1', 600: '#5254eb', 700: '#4338ca', 800: '#3730a3', 900: '#312e81' }
           },
-          fontFamily: {sans: ['Inter','ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Helvetica','Arial','Noto Sans','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol']}
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'] }
         }
       }
     }
   </script>
 
   <style>
-    .reveal{opacity:0; transform:translateY(8px); transition:opacity .7s ease, transform .7s ease}
-    .reveal.show{opacity:1; transform:translateY(0)}
+    .reveal {
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity .7s ease, transform .7s ease
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0)
+    }
   </style>
 </head>
+
 <body class="antialiased text-slate-800 bg-white">
   <!-- Top bar -->
   <div class="bg-brand-700 text-white text-sm">
@@ -43,298 +55,729 @@
       <p class="font-medium">🎓 All‑India College Admissions — Free Counseling | Hindi & English</p>
       <div class="flex items-center gap-4">
         <a href="tel:+918317795774" class="hover:underline">📞 +91‑83177-95774</a>
-        <a target="_blank" rel="noopener" href="https://wa.me/918317795774?text=Hi%20I%20need%20admission%20help" class="hover:underline">💬 WhatsApp</a>
+        <a target="_blank" rel="noopener" href="https://wa.me/918317795774?text=Hi%20I%20need%20admission%20help"
+          class="hover:underline">💬 WhatsApp</a>
       </div>
     </div>
   </div>
 
   <!-- Header -->
-<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-3">
-      <!-- Inline SVG Logo (graduation cap) -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-        class="h-9 w-9 text-brand-700">
-        <path fill="currentColor" d="M12 2L1 7l11 5 9-4.091V14h2V7z"/>
-        <path fill="currentColor" d="M4 12v4.5C4 18.985 7.582 21 12 21s8-2.015 8-4.5V12l-8 3.636z"/>
-      </svg>
-      <span class="font-extrabold text-xl">College Wallah
-      </span>
-    </a>
-    <nav class="hidden md:flex items-center gap-8 font-medium">
-      <a href="index.html#education-ladder" class="hover:text-brand-700">Education Ladder</a>
-      <a href="index.html#Placement" class="hover:text-brand-700">Placement</a>
-      <a href="index.html#popular-courses" class="hover:text-brand-700">Popular Courses</a>
-      <a href="index.html#process" class="hover:text-brand-700">Process</a>
-      <a href="index.html#apply" id="openApply" class="hover:text-brand-700 cursor-pointer">Apply</a>
-      <a href="index.html#faq" class="hover:text-brand-700">FAQ</a>
-    </nav>
-    <div class="flex items-center gap-3">
-      <button id="openApplyBtn" class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow">Apply Now</button>
-      <a href="tel:+918317795774" class="px-4 py-2 rounded-xl border border-slate-300 hover:border-brand-600">Call</a>
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <!-- Inline SVG Logo (graduation cap) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-9 w-9 text-brand-700">
+          <path fill="currentColor" d="M12 2L1 7l11 5 9-4.091V14h2V7z" />
+          <path fill="currentColor" d="M4 12v4.5C4 18.985 7.582 21 12 21s8-2.015 8-4.5V12l-8 3.636z" />
+        </svg>
+        <span class="font-extrabold text-xl">College Wallah
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 font-medium">
+        <a href="#about" class="hover:text-brand-700">About</a>
+        <a href="#feature" class="hover:text-brand-700">Feature</a>
+        <a href="#eligibility" class="hover:text-brand-700">Eligibility</a>
+        <a href="#process" class="hover:text-brand-700">How to Apply</a>
+        <a href="#benifite" id="openApply" class="hover:text-brand-700 cursor-pointer">Benefits</a>
+        <a href="#faq" id="openApply" class="hover:text-brand-700 cursor-pointer">FAQ</a>
+        <a href="#contact" class="hover:text-brand-700">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button id="openApplyBtn"
+          class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700 shadow">Apply
+          Now</button>
+        <a href="tel:+918317795774" class="px-4 py-2 rounded-xl border border-slate-300 hover:border-brand-600">Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Popup Modal -->
+  <div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
+    <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg relative">
+
+      <!-- HEADER -->
+      <div class="bg-slate-50 p-6 rounded-t-2xl border-b flex justify-between items-center">
+
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-200">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="text-lg font-black">Career Counseling 2026</h2>
+            <p class="text-xs text-blue-600 font-semibold">
+              Direct Admission Guidance
+            </p>
+          </div>
+        </div>
+
+        <button id="closeModal"
+          class="w-9 h-9 rounded-full border flex items-center justify-center hover:bg-blue-600 hover:text-white">
+          ✕
+        </button>
+      </div>
+      <form id="applyForm" onsubmit="submitLead(event)" class="space-y-4 px-6 py-3">
+        <input type="hidden" name="subject" value="New Admission Lead" />
+
+        <div>
+          <label class="block text-sm font-medium">Full Name *</label>
+          <input name="name" required class="mt-1 w-full rounded-xl border p-2" placeholder="Type your name" />
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium">Phone *</label>
+            <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2"
+              placeholder="Your Phone Number" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Email</label>
+            <input type="email" name="email" class="mt-1 w-full rounded-xl border p-2" placeholder="you@example.com" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium">State</label>
+            <input name="state" class="mt-1 w-full rounded-xl border p-2" placeholder="Your State" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Interested Course *</label>
+            <select name="course" required class="mt-1 w-full rounded-xl border p-2">
+              <option>All Course</option>
+              <option>BA</option>
+              <option>BSc</option>
+              <option>BCom</option>
+              <option>BBA</option>
+              <option>BCA</option>
+              <option>BTech</option>
+              <option>MBA</option>
+              <option>MCA</option>
+              <option>MTech</option>
+              <option>PhD</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Message</label>
+          <textarea name="message" rows="3" class="mt-1 w-full rounded-xl border p-2"
+            placeholder="Rank/percentile, budget, city preference…"></textarea>
+        </div>
+
+        <div class="flex items-center gap-2 text-xs text-slate-600">
+          <input id="consent" type="checkbox" required class="rounded" />
+          <label for="consent">I agree to be contacted via call/WhatsApp/SMS.</label>
+        </div>
+
+        <button
+          class="mt-2 w-full px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Submit</button>
+        <p id="formMsg" class="text-sm text-green-700 hidden">Thank you! We will contact you shortly.</p>
+      </form>
     </div>
   </div>
-</header>
 
-<!-- Popup Modal -->
-<div id="applyModal" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
-  <div class="bg-white w-full max-w-2xl rounded-2xl shadow-lg p-6 relative">
-    <!-- Close Button -->
-    <button id="closeModal" class="absolute top-3 right-3 text-gray-600 hover:text-red-600 text-2xl">&times;</button>
+  <!-- JS -->
+  <script>
+    const modal = document.getElementById('applyModal');
+    const openBtns = [document.getElementById('openApplyBtn'), document.getElementById('openApply')];
+    const closeBtn = document.getElementById('closeModal');
 
-    <h2 class="text-xl font-bold mb-4">Apply for Admission</h2>
-    <form id="applyForm" class="space-y-4">
-      <input type="hidden" name="subject" value="New Admission Lead" />
+    openBtns.forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', () => {
+          modal.classList.remove('hidden');
+        });
+      }
+    });
 
-      <div>
-        <label class="block text-sm font-medium">Full Name *</label>
-        <input name="name" required class="mt-1 w-full rounded-xl border p-2" placeholder="Type your name" />
-      </div>
-
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-sm font-medium">Phone *</label>
-          <input name="phone" required pattern="[0-9]{10}" class="mt-1 w-full rounded-xl border p-2" placeholder="Your Phone Number" />
-        </div>
-        <div>
-          <label class="block text-sm font-medium">Email</label>
-          <input type="email" name="email" class="mt-1 w-full rounded-xl border p-2" placeholder="you@example.com" />
-        </div>
-      </div>
-
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-sm font-medium">State</label>
-          <input name="state" class="mt-1 w-full rounded-xl border p-2" placeholder="Your State" />
-        </div>
-        <div>
-          <label class="block text-sm font-medium">Interested Course *</label>
-          <select name="course" required class="mt-1 w-full rounded-xl border p-2">
-            <option>All Course</option>
-            <option>BA</option>
-            <option>BSc</option>
-            <option>BCom</option>
-            <option>BBA</option>
-            <option>BCA</option>
-            <option>BTech</option>
-            <option>MBA</option>
-            <option>MCA</option>
-            <option>MTech</option>
-            <option>PhD</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-
-      <div>
-        <label class="block text-sm font-medium">Message</label>
-        <textarea name="message" rows="3" class="mt-1 w-full rounded-xl border p-2" placeholder="Rank/percentile, budget, city preference…"></textarea>
-      </div>
-
-      <div class="flex items-center gap-2 text-xs text-slate-600">
-        <input id="consent" type="checkbox" required class="rounded" />
-        <label for="consent">I agree to be contacted via call/WhatsApp/SMS.</label>
-      </div>
-
-      <button class="mt-2 w-full px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Submit</button>
-      <p id="formMsg" class="text-sm text-green-700 hidden">Thank you! We will contact you shortly.</p>
-    </form>
-  </div>
-</div>
-
-<!-- JS -->
-<script>
-  const modal = document.getElementById('applyModal');
-  const openBtns = [document.getElementById('openApplyBtn'), document.getElementById('openApply')];
-  const closeBtn = document.getElementById('closeModal');
-
-  openBtns.forEach(btn => {
-    if (btn) {
-      btn.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-      });
-    }
-  });
-
-  closeBtn.addEventListener('click', () => {
-    modal.classList.add('hidden');
-  });
-
-  // Close modal when clicking outside
-  window.addEventListener('click', (e) => {
-    if (e.target === modal) {
+    closeBtn.addEventListener('click', () => {
       modal.classList.add('hidden');
-    }
-  });
-</script>
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-b from-brand-50 to-white py-14">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center">
-        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Bihar Student Credit Card Scheme</h1>
-        <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Education finance up to ₹4 Lakh with low interest rates, no collateral required. Empowering Bihar students to pursue higher education without financial barriers.</p>
-        <div class="mt-6 flex flex-wrap justify-center gap-3">
-          <a href="#apply" class="px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Apply for Loan</a>
-          <a href="#eligibility" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Check Eligibility</a>
-          <a href="tel:+918317795774" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Call for Help</a>
+  <section class="relative bg-gradient-to-br from-blue-900 to-blue-700 py-20 px-6 overflow-hidden">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-400 opacity-20 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative z-10">
+      <div class="lg:w-3/5 text-center lg:text-left">
+        <div
+          class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-100 uppercase bg-blue-800 bg-opacity-50 rounded-full border border-blue-400">
+          7 Nishchay • MNSSBY Initiative
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+          Don’t let finances limit your <span class="text-yellow-400">Education.</span>
+        </h1>
+
+        <p class="mt-6 text-lg md:text-xl text-blue-100 max-w-2xl leading-relaxed">
+          Get a Student Credit Card worth up to <strong>₹4,00,000</strong> for higher studies. Simple application,
+          minimal documentation, and Bihar Government's trust.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+          <button
+            class="px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold rounded-lg transition duration-300 transform hover:scale-105 shadow-xl">
+            Start Your Application
+          </button>
+          <button
+            class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-blue-900 transition duration-300">
+            Check Eligibility
+          </button>
+        </div>
+
+        <div
+          class="mt-12 flex flex-wrap justify-center lg:justify-start items-center gap-8 border-t border-blue-600 pt-8 opacity-80">
+          <div class="text-white">
+            <p class="text-2xl font-bold">1%</p>
+            <p class="text-xs uppercase text-blue-200 tracking-wider">Interest for Girls</p>
+          </div>
+          <div class="text-white">
+            <p class="text-2xl font-bold">4%</p>
+            <p class="text-xs uppercase text-blue-200 tracking-wider">Interest for Boys</p>
+          </div>
+          <div class="text-white">
+            <p class="text-2xl font-bold">Zero</p>
+            <p class="text-xs uppercase text-blue-200 tracking-wider">Collateral Needed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-2/5 w-full">
+        <div
+          class="relative bg-white p-2 rounded-3xl shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+          <div class="bg-gray-50 border-2 border-dashed border-blue-200 rounded-2xl p-8 text-center">
+            <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+              <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Bihar Student Credit Card</h3>
+            <p class="text-gray-500 mt-2 text-sm">Empowering 5 Lakh+ Students in 2026</p>
+            <div class="mt-6 py-3 bg-blue-50 rounded-xl text-blue-700 font-semibold">
+              Apply with 7 Nishchay
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Overview -->
-  <section class="py-14 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div class="reveal">
-          <h2 class="text-2xl md:text-3xl font-bold">Scheme Overview</h2>
-          <p class="mt-4 text-slate-600">Launched by the Government of Bihar, the Bihar Student Credit Card Scheme aims to provide financial assistance to meritorious students from economically weaker sections. It offers education loans up to ₹4 lakh at subsidized interest rates, ensuring that financial constraints do not hinder educational aspirations.</p>
-          <ul class="mt-6 space-y-2 text-slate-600">
-            <li>✅ Up to ₹4 Lakh loan amount</li>
-            <li>✅ Interest rates from 0% to 4%</li>
-            <li>✅ No collateral or guarantor required</li>
-            <li>✅ Repayment starts after job placement</li>
-            <li>✅ Covers tuition, hostel, and other education expenses</li>
-          </ul>
+  <section class="py-20 bg-gradient-to-b from-white to-blue-50 overflow-hidden" id="about">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <div class="reveal order-2 lg:order-1">
+          <div
+            class="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-blue-700 uppercase bg-blue-100 rounded-full">
+            About MNSSBY Scheme
+          </div>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+            Education Without <br>
+            <span class="text-blue-600">Financial Borders</span>
+          </h2>
+          <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+            Launched by the Government of Bihar, the **Bihar Student Credit Card Scheme** is more than just a loan—it's
+            a launchpad. We ensure that your economic background never dictates your academic reach.
+          </p>
+
+          <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div
+              class="group p-4 bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+              <div class="text-blue-600 font-bold text-xl mb-1">₹4 Lakhs</div>
+              <p class="text-sm text-slate-500">Maximum loan limit for higher studies.</p>
+            </div>
+            <div
+              class="group p-4 bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+              <div class="text-green-600 font-bold text-xl mb-1">1% - 4%</div>
+              <p class="text-sm text-slate-500">Subsidized simple interest rates.</p>
+            </div>
+            <div
+              class="group p-4 bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+              <div class="text-purple-600 font-bold text-xl mb-1">No Collateral</div>
+              <p class="text-sm text-slate-500">Zero security or guarantor needed.</p>
+            </div>
+            <div
+              class="group p-4 bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+              <div class="text-orange-600 font-bold text-xl mb-1">Job Ready</div>
+              <p class="text-sm text-slate-500">Repayment starts after your placement.</p>
+            </div>
+          </div>
+
+          <button
+            class="mt-10 px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all">
+            Download Scheme PDF
+          </button>
         </div>
-        <div class="reveal">
-          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800&auto=format&fit=crop" alt="Students studying" class="rounded-2xl shadow-xl">
+
+        <div class="reveal order-1 lg:order-2 relative">
+          <div
+            class="absolute -top-10 -right-10 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse">
+          </div>
+
+          <div class="relative">
+            <img src="../assete/girl.jpg" alt="Student Success"
+              class="rounded-3xl shadow-2xl z-10 relative object-cover h-[500px] w-full">
+
+            <div
+              class="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl z-20 border border-white max-w-[200px] hidden md:block animate-bounce-slow">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="flex h-3 w-3 rounded-full bg-green-500"></span>
+                <span class="text-xs font-bold text-slate-800 uppercase">Live Stats</span>
+              </div>
+              <p class="text-2xl font-black text-blue-600">5L+</p>
+              <p class="text-xs text-slate-500">Students benefited across Bihar this year.</p>
+            </div>
+
+            <div class="absolute top-10 -right-6 bg-blue-600 p-4 rounded-2xl shadow-xl z-20 text-white hidden md:block">
+              <svg class="w-8 h-8 opacity-80" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M10.394 2.827c.197-.1.412-.145.628-.131a1 1 0 01.81.513l3.24 5.4a1 1 0 01-1.71 1.048l-3.24-5.4a1 1 0 01.272-1.43zM4.536 7.747a1 1 0 011.231-.617l5.312 1.63a1 1 0 01-.588 1.91l-5.312-1.63a1 1 0 01-.643-1.293zm2.54 6.784a1 1 0 01.447-1.342l5.313-2.657a1 1 0 01.894 1.789l-5.313 2.657a1 1 0 01-1.341-.447z">
+                </path>
+              </svg>
+              <p class="mt-2 font-bold leading-tight text-sm">Collateral <br> Free Loan</p>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
+
+  <style>
+    @keyframes bounce-slow {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-bounce-slow {
+      animation: bounce-slow 4s ease-in-out infinite;
+    }
+  </style>
 
   <!-- Key Features -->
-  <section class="py-14 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-center">Key Features</h2>
-      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 rounded-2xl bg-white border reveal">
-          <div class="text-4xl mb-4">💰</div>
-          <h3 class="font-semibold">Loan Amount</h3>
-          <p class="mt-2 text-sm text-slate-600">Up to ₹4,00,000 for higher education courses in India and abroad.</p>
+  <section class="py-20 bg-slate-50 overflow-hidden" id="features">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section Heading -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">
+          Key Features
+        </h2>
+        <p class="text-blue-700 font-semibold ">
+          Why Bihar Student Credit Card is a game changer for your higher education journey.
+        </p>
+      </div>
+
+
+      <!-- Feature Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div
+          class="reveal group p-6 bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="w-10 h-10 mb-4 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">₹4 Lakh Limit</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Cover your entire tuition fee, hostel charges, and books with a generous education loan limit.
+          </p>
         </div>
-        <div class="p-6 rounded-2xl bg-white border reveal">
-          <div class="text-4xl mb-4">📉</div>
-          <h3 class="font-semibold">Low Interest</h3>
-          <p class="mt-2 text-sm text-slate-600">Subsidized rates from 0% to 4% per annum, much lower than market rates.</p>
+
+        <!-- Card 2 -->
+        <div
+          class="reveal group p-6 bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="w-10 h-10 mb-4 bg-green-100 text-green-600 rounded-lg flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">Minimal Interest</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Only <strong>1% interest</strong> for Girls, Divyang & Transgender students and <strong>4% for
+              Boys</strong>.
+          </p>
         </div>
-        <div class="p-6 rounded-2xl bg-white border reveal">
-          <div class="text-4xl mb-4">🔓</div>
-          <h3 class="font-semibold">No Collateral</h3>
-          <p class="mt-2 text-sm text-slate-600">No need for property or assets as security for the loan.</p>
+
+        <!-- Card 3 -->
+        <div
+          class="reveal group p-6 bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="w-10 h-10 mb-4 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">Zero Collateral</h3>
+          <p class="text-slate-600 leading-relaxed">
+            No guarantor or property required — Bihar Government backs your loan.
+          </p>
         </div>
-        <div class="p-6 rounded-2xl bg-white border reveal">
-          <div class="text-4xl mb-4">⏳</div>
-          <h3 class="font-semibold">Flexible Repayment</h3>
-          <p class="mt-2 text-sm text-slate-600">Repayment begins only after securing employment, with moratorium period.</p>
+
+        <!-- Card 4 -->
+        <div
+          class="reveal group p-6 bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="w-10 h-10 mb-4 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-all duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">Moratorium Period</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Repayment starts one year after course completion or employment.
+          </p>
         </div>
+
+        <!-- Card 5 -->
+        <div
+          class="reveal group p-6 bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="w-10 h-10 mb-4 bg-pink-100 text-pink-600 rounded-lg flex items-center justify-center group-hover:bg-pink-600 group-hover:text-white transition-all duration-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">75+ Courses Covered</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Engineering, Medical, Management, Polytechnic, Fashion & more.
+          </p>
+        </div>
+
+        <!-- CTA Card -->
+        <div
+          class="reveal p-6 bg-blue-600 rounded-2xl shadow-xl border border-blue-500 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-center items-center text-center text-white">
+          <h3 class="text-2xl font-bold mb-3">Ready to Start?</h3>
+          <p class="text-blue-100 mb-4 text-sm">
+            Secure your future with Bihar Student Credit Card.
+          </p>
+          <a href="#"
+            class="px-5 py-2.5 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-colors">
+            Apply Now
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
+
+
   <!-- Eligibility -->
-  <section id="eligibility" class="py-14 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">Eligibility Criteria</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-8">
+  <section id="eligibility" class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="reveal mb-12">
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-2">Eligibility & Coverage</h2>
+        <p class="mt-2 text-blue-700 font-semibold ">Please review the following requirements carefully before starting
+          your
+          application.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+
         <div class="reveal">
-          <h3 class="text-xl font-semibold">Who Can Apply?</h3>
-          <ul class="mt-4 space-y-2 text-slate-600">
-            <li>• Students who are permanent residents of Bihar</li>
-            <li>• Pursuing undergraduate or postgraduate courses</li>
-            <li>• Minimum 60% marks in Class 12 (or equivalent)</li>
-            <li>• Family income less than ₹6 lakh per annum</li>
-            <li>• Age between 17-25 years</li>
-          </ul>
+          <h3 class="text-lg font-bold text-blue-700 uppercase tracking-widest mb-6">General Requirements</h3>
+          <div class="space-y-6">
+
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-bold">
+                1</div>
+              <div>
+                <p class="font-bold text-slate-800">Residency</p>
+                <p class="text-sm text-slate-600 mt-1">Applicant must be a permanent resident of Bihar state.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-bold">
+                2</div>
+              <div>
+                <p class="font-bold text-slate-800">Academic Background</p>
+                <p class="text-sm text-slate-600 mt-1">Completion of Class 12 (Intermediate) with at least 60% aggregate
+                  marks.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-bold">
+                3</div>
+              <div>
+                <p class="font-bold text-slate-800">Age Limit</p>
+                <p class="text-sm text-slate-600 mt-1">Students must be between 17 and 25 years of age at the time of
+                  application.</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xs font-bold">
+                4</div>
+              <div>
+                <p class="font-bold text-slate-800">Income Status</p>
+                <p class="text-sm text-slate-600 mt-1">Total family annual income should not exceed ₹6,00,000.</p>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="reveal">
-          <h3 class="text-xl font-semibold">Courses Covered</h3>
-          <ul class="mt-4 space-y-2 text-slate-600">
-            <li>• Engineering (B.Tech, M.Tech)</li>
-            <li>• Medical (MBBS, BDS, Nursing)</li>
-            <li>• Management (MBA, BBA)</li>
-            <li>• Science, Arts, Commerce degrees</li>
-            <li>• Professional courses like Law, Pharmacy</li>
-            <li>• Studies in India or abroad</li>
-          </ul>
+
+        <div class="reveal bg-slate-50 p-8 rounded-2xl border border-slate-100">
+          <h3 class="text-lg font-bold text-slate-900 mb-6">Approved Course Categories</h3>
+          <div class="grid grid-cols-1 gap-3">
+
+            <div
+              class="bg-white p-3 rounded-lg border border-slate-200 text-slate-700 text-sm flex justify-between items-center">
+              <span>Engineering & Technology</span>
+              <span
+                class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded text-slate-500 uppercase">Degree/Diploma</span>
+            </div>
+
+            <div
+              class="bg-white p-3 rounded-lg border border-slate-200 text-slate-700 text-sm flex justify-between items-center">
+              <span>Medical & Healthcare</span>
+              <span
+                class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded text-slate-500 uppercase">MBBS/Nursing/BDS</span>
+            </div>
+
+            <div
+              class="bg-white p-3 rounded-lg border border-slate-200 text-slate-700 text-sm flex justify-between items-center">
+              <span>Management & Business</span>
+              <span
+                class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded text-slate-500 uppercase">BBA/MBA/PGDM</span>
+            </div>
+
+            <div
+              class="bg-white p-3 rounded-lg border border-slate-200 text-slate-700 text-sm flex justify-between items-center">
+              <span>Professional Studies</span>
+              <span
+                class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded text-slate-500 uppercase">Law/Pharmacy/BCA</span>
+            </div>
+
+            <div
+              class="bg-white p-3 rounded-lg border border-slate-200 text-slate-700 text-sm flex justify-between items-center">
+              <span>General Academics</span>
+              <span
+                class="text-[10px] font-bold bg-slate-100 px-2 py-0.5 rounded text-slate-500 uppercase">BA/B.Sc/B.Com</span>
+            </div>
+
+            <p class="text-[11px] text-slate-400 mt-4 leading-tight italic">
+              * Note: The scheme covers over 75+ vocational and technical courses recognized by the State/Central
+              regulatory bodies.
+            </p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- Application Process -->
-  <section class="py-14 bg-slate-50">
+  <section class="py-14 bg-slate-50" id="process">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-center">How to Apply</h2>
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">
+          How to Apply
+        </h2>
+        <p class="text-blue-700 font-semibold mb-8">
+          Follow these simple steps to apply for the Bihar Student Credit Card Scheme smoothly.
+        </p>
+      </div>
+
       <div class="mt-10 grid md:grid-cols-3 gap-6">
         <div class="p-6 rounded-2xl bg-white border reveal text-center">
           <div class="text-4xl mb-4">1️⃣</div>
           <h3 class="font-semibold">Online Application</h3>
-          <p class="mt-2 text-sm text-slate-600">Fill the online application form on the official portal or through designated banks.</p>
+          <p class="mt-2 text-sm text-slate-600">Fill the online application form on the official portal or through
+            designated banks.</p>
         </div>
         <div class="p-6 rounded-2xl bg-white border reveal text-center">
           <div class="text-4xl mb-4">2️⃣</div>
           <h3 class="font-semibold">Document Verification</h3>
-          <p class="mt-2 text-sm text-slate-600">Submit required documents for verification at the bank or nodal agency.</p>
+          <p class="mt-2 text-sm text-slate-600">Submit required documents for verification at the bank or nodal agency.
+          </p>
         </div>
         <div class="p-6 rounded-2xl bg-white border reveal text-center">
           <div class="text-4xl mb-4">3️⃣</div>
           <h3 class="font-semibold">Loan Disbursement</h3>
-          <p class="mt-2 text-sm text-slate-600">Once approved, funds are directly transferred to the educational institution.</p>
+          <p class="mt-2 text-sm text-slate-600">Once approved, funds are directly transferred to the educational
+            institution.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Documents Required -->
-  <section class="py-14 bg-white">
+  <section id="documents-required" class="py-20 bg-gradient-to-b from-slate-50 to-white">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">Documents Required</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-8">
-        <div class="reveal">
-          <h3 class="text-xl font-semibold">Identity & Residence Proof</h3>
-          <ul class="mt-4 space-y-2 text-slate-600">
-            <li>• Aadhaar Card</li>
-            <li>• PAN Card</li>
-            <li>• Bihar Domicile Certificate</li>
-            <li>• Passport-size photographs</li>
-          </ul>
-        </div>
-        <div class="reveal">
-          <h3 class="text-xl font-semibold">Academic & Income Proof</h3>
-          <ul class="mt-4 space-y-2 text-slate-600">
-            <li>• Class 10 & 12 mark sheets</li>
-            <li>• Admission letter from college/university</li>
-            <li>• Fee structure of the course</li>
-            <li>• Income certificate of parents</li>
-            <li>• Bank statements (if applicable)</li>
-          </ul>
-        </div>
+
+      <!-- Header -->
+      <div class="max-w-3xl mb-14">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">
+          Documents Required
+        </h2>
+        <p class="text-blue-700 font-semibold mb-8">
+          Keep the following documents ready to ensure a smooth verification and admission process.
+        </p>
       </div>
+
+      <!-- Cards -->
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- Identity Card -->
+        <div
+          class="group relative bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+
+          <div
+            class="absolute inset-0 rounded-3xl bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition">
+          </div>
+
+          <div class="relative">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="h-12 w-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-600 text-xl font-bold">
+                🪪
+              </div>
+              <h3 class="text-xl font-bold text-slate-800">
+                Identity & Residence Proof
+              </h3>
+            </div>
+
+            <ul class="space-y-4 text-slate-700">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-indigo-500"></span>
+                Aadhaar Card
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-indigo-500"></span>
+                PAN Card
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-indigo-500"></span>
+                Bihar Domicile Certificate
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-indigo-500"></span>
+                Passport-size photographs
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Academic Card -->
+        <div
+          class="group relative bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
+
+          <div
+            class="absolute inset-0 rounded-3xl bg-gradient-to-br from-emerald-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition">
+          </div>
+
+          <div class="relative">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="h-12 w-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 text-xl font-bold">
+                🎓
+              </div>
+              <h3 class="text-xl font-bold text-slate-800">
+                Academic & Income Proof
+              </h3>
+            </div>
+
+            <ul class="space-y-4 text-slate-700">
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                Class 10 &amp; 12 mark sheets
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                Admission letter from college/university
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                Fee structure of the course
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                Income certificate of parents
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                Bank statements (if applicable)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
+
   <!-- Benefits -->
-  <section class="py-14 bg-slate-50">
+  <section class="py-14 " id="benifite">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-bold text-center">Benefits of the Scheme</h2>
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">
+          Benefits of the Scheme
+        </h2>
+        <p class="text-blue-700 font-semibold mb-8">
+          Explore the key advantages of the Bihar Student Credit Card Scheme for your higher education.
+        </p>
+      </div>
+
       <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="p-6 rounded-2xl bg-white border reveal">
           <div class="text-4xl mb-4">🎓</div>
           <h3 class="font-semibold">Access to Quality Education</h3>
-          <p class="mt-2 text-sm text-slate-600">Enables students to pursue higher education in reputed institutions without worrying about finances.</p>
+          <p class="mt-2 text-sm text-slate-600">Enables students to pursue higher education in reputed institutions
+            without worrying about finances.</p>
         </div>
         <div class="p-6 rounded-2xl bg-white border reveal">
           <div class="text-4xl mb-4">💼</div>
           <h3 class="font-semibold">Career Advancement</h3>
-          <p class="mt-2 text-sm text-slate-600">Higher education leads to better job opportunities and improved earning potential.</p>
+          <p class="mt-2 text-sm text-slate-600">Higher education leads to better job opportunities and improved earning
+            potential.</p>
         </div>
         <div class="p-6 rounded-2xl bg-white border reveal">
           <div class="text-4xl mb-4">🏛️</div>
           <h3 class="font-semibold">Government Support</h3>
-          <p class="mt-2 text-sm text-slate-600">Backed by the Government of Bihar, ensuring reliability and long-term benefits.</p>
+          <p class="mt-2 text-sm text-slate-600">Backed by the Government of Bihar, ensuring reliability and long-term
+            benefits.</p>
         </div>
         <div class="p-6 rounded-2xl bg-white border reveal">
           <div class="text-4xl mb-4">⏰</div>
@@ -356,16 +799,159 @@
   </section>
 
   <!-- Contact & Apply -->
-  <section id="apply" class="py-14 bg-white">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="text-center">
-        <h2 class="text-2xl md:text-3xl font-bold">Ready to Apply?</h2>
-        <p class="mt-4 text-slate-600">Get expert guidance on the Bihar Student Credit Card Scheme application process.</p>
-        <div class="mt-6 flex flex-wrap justify-center gap-3">
-          <a href="tel:+918317795774" class="px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700 shadow">Call Now</a>
-          <a target="_blank" rel="noopener" href="https://wa.me/918317795774?text=Hi%20I%20need%20help%20with%20Bihar%20Student%20Credit%20Card" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">WhatsApp</a>
-          <a href="index.html#apply" class="px-5 py-3 rounded-2xl border border-slate-300 hover:border-brand-600">Apply for Admission</a>
+  <section id="contact" class="py-24 bg-slate-900 overflow-hidden relative">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -mr-48 -mt-48"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl -ml-48 -mb-48"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <div class="reveal">
+          <h2 class="text-blue-500 font-bold text-sm uppercase tracking-widest mb-4">Get in Touch</h2>
+          <h3 class="text-4xl md:text-5xl font-black text-white mb-8 tracking-tighter">
+            Need Help with <br><span class="text-blue-500">Your Application?</span>
+          </h3>
+          <p class="text-slate-400 text-lg mb-10 leading-relaxed max-w-md">
+            Our team is here to guide you through the DRCC process and documentation. Don't let a doubt stop your
+            education.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-center gap-6 group">
+              <div
+                class="w-14 h-14 bg-slate-800 border border-slate-700 rounded-2xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">Helpline</p>
+                <p class="text-white text-xl font-bold">8317795774</p>
+              </div>
+            </div>
+
+            <!-- <div class="flex items-center gap-6 group">
+              <div
+                class="w-14 h-14 bg-slate-800 border border-slate-700 rounded-2xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">Local Support</p>
+                <p class="text-white text-xl font-bold">Nearby DRCC Office, Bihar</p>
+              </div>
+            </div> -->
+            <div class="flex items-center gap-6 group">
+              <div
+                class="w-14 h-14 bg-slate-800 border border-slate-700 rounded-2xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z">
+                  </path>
+                </svg>
+              </div>
+
+              <div>
+                <p class="text-slate-500 text-xs font-bold uppercase tracking-widest">
+                  Trusted Platform
+                </p>
+                <p class="text-white text-xl font-bold">
+                  Guiding Bihar Students Since 2019
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-12 flex gap-4">
+
+            <!-- Facebook -->
+            <a href="#"
+              class="group w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691V11.01h3.13V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z" />
+              </svg>
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="#"
+              class="group w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-sky-500 hover:text-white transition-all duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.957-2.178-1.555-3.594-1.555-2.717 0-4.92 2.204-4.92 4.917 0 .39.045.765.127 1.124-4.087-.205-7.713-2.165-10.141-5.144-.422.722-.666 1.561-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.419-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 14-7.496 14-13.986 0-.209 0-.42-.016-.63.961-.689 1.8-1.56 2.46-2.548z" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#"
+              class="group w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.343 3.608 1.318.975.975 1.256 2.242 1.318 3.608.058 1.266.069 1.646.069 4.84 0 3.193-.011 3.573-.069 4.84-.062 1.366-.343 2.633-1.318 3.608-.975.975-2.242 1.256-3.608 1.318-1.266.058-1.646.069-4.85.069-3.204 0-3.584-.011-4.85-.069-1.366-.062-2.633-.343-3.608-1.318-.975-.975-1.256-2.242-1.318-3.608-.058-1.267-.069-1.647-.069-4.84 0-3.194.011-3.574.069-4.84.062-1.366.343-2.633 1.318-3.608.975-.975 2.242-1.256 3.608-1.318 1.266-.058 1.646-.07 4.85-.07zm0 3.675a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1-2.881 0 1.44 1.44 0 0 1 2.881 0z" />
+              </svg>
+            </a>
+
+          </div>
+
         </div>
+
+        <div class="reveal">
+          <div class="bg-white/5 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] border border-white/10 shadow-2xl">
+            <form action="#" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-slate-300 text-sm font-bold mb-2">Full Name</label>
+                  <input type="text" placeholder="Enter Your Name"
+                    class="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-5 py-3 text-white focus:outline-none focus:border-blue-500 transition-all">
+                </div>
+                <div>
+                  <label class="block text-slate-300 text-sm font-bold mb-2">Phone Number</label>
+                  <input type="tel" placeholder="Enter Your Mobile Number"
+                    class="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-5 py-3 text-white focus:outline-none focus:border-blue-500 transition-all">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-slate-300 text-sm font-bold mb-2">Select Your Course</label>
+                <select
+                  class="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-5 py-3 text-white focus:outline-none focus:border-blue-500 transition-all appearance-none">
+                  <option>B.Tech (CSE)</option>
+                  <option>Medical (MBBS)</option>
+                  <option>BA</option>
+                  <option>BSc</option>
+                  <option>BCom</option>
+                  <option>BBA</option>
+                  <option>BCA</option>
+                  <option>BTech(EE,ME,CE)</option>
+                  <option>MBA</option>
+                  <option>MCA</option>
+                  <option>MTech</option>
+                  <option>PhD</option>
+                  <option>Others</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-slate-300 text-sm font-bold mb-2">How can we help?</label>
+                <textarea rows="4" placeholder="I have a question about my DRCC verification..."
+                  class="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-5 py-3 text-white focus:outline-none focus:border-blue-500 transition-all"></textarea>
+              </div>
+
+              <button
+                class="w-full py-4 bg-blue-600 text-white font-black rounded-xl hover:bg-blue-500 shadow-xl shadow-blue-600/20 transition-all transform hover:-translate-y-1">
+                SEND ENQUIRY
+              </button>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -413,5 +999,11 @@
     // copyright year
     document.getElementById('year').textContent = new Date().getFullYear()
   </script>
+  <script src="../assete/js/submitLead.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,29 +9,30 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    function toggleDarkMode(){document.documentElement.classList.toggle('dark')}
-    function openModal(){document.getElementById('modal').classList.remove('hidden')}
-    function closeModal(){document.getElementById('modal').classList.add('hidden')}
-    function calculateEMI(){
-      const amount=parseFloat(document.getElementById('feeAmount').value)||0;
-      const years=parseInt(document.getElementById('years').value)||1;
-      const emi=(amount/(years*12)).toFixed(2);
-      document.getElementById('emiResult').innerText=`Monthly EMI: ₹${emi}`;
+    function toggleDarkMode() { document.documentElement.classList.toggle('dark') }
+    function openModal() { document.getElementById('modal').classList.remove('hidden') }
+    function closeModal() { document.getElementById('modal').classList.add('hidden') }
+    function calculateEMI() {
+      const amount = parseFloat(document.getElementById('feeAmount').value) || 0;
+      const years = parseInt(document.getElementById('years').value) || 1;
+      const emi = (amount / (years * 12)).toFixed(2);
+      document.getElementById('emiResult').innerText = `Monthly EMI: ₹${emi}`;
     }
-    function searchContent(){
-      const q=document.getElementById('search').value.toLowerCase();
-      document.querySelectorAll('.searchable').forEach(sec=>{
-        sec.style.display=sec.innerText.toLowerCase().includes(q)?'':'none';
+    function searchContent() {
+      const q = document.getElementById('search').value.toLowerCase();
+      document.querySelectorAll('.searchable').forEach(sec => {
+        sec.style.display = sec.innerText.toLowerCase().includes(q) ? '' : 'none';
       });
     }
   </script>
 </head>
+
 <body class="bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
   <!-- Header -->
   <header class="bg-blue-600 text-white p-6 flex justify-between items-center">
     <h1 class="text-2xl font-bold">Bachelor of Business Administration (BBA)</h1>
     <div class="flex gap-3">
-      <input type="text" id="search" onkeyup="searchContent()" placeholder="Search..." class="p-2 rounded text-black"/>
+      <input type="text" id="search" onkeyup="searchContent()" placeholder="Search..." class="p-2 rounded text-black" />
       <button onclick="toggleDarkMode()" class="bg-black/30 px-4 py-2 rounded">Dark/Light</button>
     </div>
   </header>
@@ -39,7 +41,9 @@
     <!-- Overview -->
     <section class="searchable">
       <h2 class="text-xl font-semibold mb-2">Program Overview</h2>
-      <p>BBA (Bachelor of Business Administration) is a 3-year undergraduate program focused on management, leadership, and business administration. It is an ideal course for students aiming for corporate, entrepreneurship, and managerial roles.</p>
+      <p>BBA (Bachelor of Business Administration) is a 3-year undergraduate program focused on management, leadership,
+        and business administration. It is an ideal course for students aiming for corporate, entrepreneurship, and
+        managerial roles.</p>
     </section>
 
     <!-- Syllabus -->
@@ -132,8 +136,10 @@
       <h2 class="text-xl font-semibold mb-2">Course Fees & EMI Calculator</h2>
       <p>Average BBA course fees range from ₹50,000 – ₹2,50,000 annually depending on the institute.</p>
       <div class="mt-4 p-4 bg-white dark:bg-gray-800 rounded shadow">
-        <input id="feeAmount" type="number" placeholder="Enter total fees (₹)" class="p-2 rounded text-black mb-2 w-full" />
-        <input id="years" type="number" placeholder="Enter duration (years)" class="p-2 rounded text-black mb-2 w-full" />
+        <input id="feeAmount" type="number" placeholder="Enter total fees (₹)"
+          class="p-2 rounded text-black mb-2 w-full" />
+        <input id="years" type="number" placeholder="Enter duration (years)"
+          class="p-2 rounded text-black mb-2 w-full" />
         <button onclick="calculateEMI()" class="bg-blue-600 text-white px-4 py-2 rounded">Calculate EMI</button>
         <p id="emiResult" class="mt-2 font-bold"></p>
       </div>
@@ -149,10 +155,10 @@
   <div id="modal" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center">
     <div class="bg-white dark:bg-gray-800 p-6 rounded shadow max-w-md w-full">
       <h3 class="text-lg font-semibold mb-2">Application Form</h3>
-      <form id="applyForm">
-        <input type="text" placeholder="Full Name" class="p-2 rounded text-black mb-2 w-full" required/>
-        <input type="email" placeholder="Email" class="p-2 rounded text-black mb-2 w-full" required/>
-        <input type="tel" placeholder="Phone Number" class="p-2 rounded text-black mb-2 w-full" required/>
+      <form id="applyForm" onsubmit="submitLead(event)">
+        <input type="text" placeholder="Full Name" class="p-2 rounded text-black mb-2 w-full" required />
+        <input type="email" placeholder="Email" class="p-2 rounded text-black mb-2 w-full" required />
+        <input type="tel" placeholder="Phone Number" class="p-2 rounded text-black mb-2 w-full" required />
         <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded w-full">Submit</button>
       </form>
       <button onclick="closeModal()" class="mt-2 text-red-500">Close</button>
@@ -164,4 +170,5 @@
     © 2025 BBA Program Portal. All Rights Reserved.
   </footer>
 </body>
+
 </html>

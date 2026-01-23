@@ -135,7 +135,7 @@
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
-      <form id="applyForm" class="space-y-4 p-6 ">
+      <form id="applyForm" onsubmit="submitLead(event)" class="space-y-4 p-6 ">
         <input type="hidden" name="subject" value="New journalism Admission Lead" />
 
         <div>
@@ -844,7 +844,7 @@
       </div>
 
       <!-- FORM -->
-      <form id="applyForm" class="px-6 py-3 space-y-2">
+      <form id="applyForm" onsubmit="submitLead(event)" class="px-6 py-3 space-y-2">
 
         <!-- AUTO FILLED -->
         <input type="hidden" id="streamInput" name="stream">
@@ -906,6 +906,7 @@
       </form>
     </div>
   </div>
+  <script src="../assete/js/submitLead.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();

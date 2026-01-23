@@ -742,8 +742,9 @@
           </div>
 
           <div class="flex gap-3 w-full sm:w-auto">
-            <button id="openApply"
-              class="flex-1 sm:flex-none px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg transition-all shadow-lg shadow-emerald-900/20">
+            <button
+              class=" applyBtn flex-1 sm:flex-none px-8 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg transition-all shadow-lg shadow-emerald-900/20"
+              data-stream="Agriculture" data-course="B.Sc Agriculture">
               Apply Now
             </button>
             <a href="tel:+918317795774"
@@ -869,7 +870,7 @@
       </div>
 
       <!-- FORM -->
-      <form id="applyForm" class="p-6 space-y-4" onsubmit="submitLead(event)">
+      <form id="applyForm" onsubmit="submitLead(event)" class="p-6 space-y-4">
 
         <!-- AUTO FILLED -->
         <input type="hidden" id="streamInput" name="stream">
@@ -878,14 +879,15 @@
 
         <div>
           <label class="block text-sm font-medium">Full Name *</label>
-          <input required name="name" class="w-full border rounded-xl p-2" placeholder="Enter your name">
+          <input name="name" class="w-full border rounded-xl p-2" placeholder="Enter your name">
+          <p class="text-red-500 text-xs mt-1 hidden" id="error-name"></p>
         </div>
 
         <div class="grid sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-sm font-medium">Phone *</label>
-            <input required name="phone" pattern="[0-9]{10}" class="w-full border rounded-xl p-2"
-              placeholder="10-digit mobile">
+            <input name="phone" class="w-full border rounded-xl p-2" placeholder="10-digit mobile">
+            <p class="text-red-500 text-xs mt-1 hidden" id="error-phone"></p>
           </div>
           <div>
             <label class="block text-sm font-medium">Email</label>
@@ -900,12 +902,11 @@
           </div>
 
           <div>
-            <label class="block text-sm font-medium">
-              Interested Course *
-            </label>
-            <select id="courseSelect" name="course" required class="w-full border rounded-xl p-2">
-              <option>Other</option>
+            <label class="block text-sm font-medium">Interested Course *</label>
+            <select id="courseSelect" name="course" class="w-full border rounded-xl p-2">
+              <option value="">Select course</option>
             </select>
+            <p class="text-red-500 text-xs mt-1 hidden" id="error-course"></p>
           </div>
         </div>
 
@@ -928,10 +929,22 @@
     </div>
   </div>
   <script src="../assete/js/submitLead.js"></script>
+
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
   </script>
+  <div id="successPopup" class="fixed inset-0 hidden bg-black/50 flex items-center justify-center z-50">
+    <div class="bg-white rounded-2xl p-6 text-center max-w-sm w-full">
+      <h3 class="text-lg font-bold text-green-600">✅ Submitted Successfully</h3>
+      <p class="text-sm text-slate-600 mt-2">
+        Our counselor will contact you shortly.
+      </p>
+      <button onclick="closeSuccessPopup()" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-xl">
+        OK
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>

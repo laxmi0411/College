@@ -8,6 +8,7 @@
     content="Explore engineering colleges in India: B.Tech, M.Tech, Diploma. Eligibility, qualifications, top IITs, NITs, IIITs, JEE Main guidance, and free admission counseling." />
   <link rel="canonical" href="https://www.yourdomain.com/engineering.html" />
   <link rel="icon" href="/favicon.ico" />
+  <script src="../assete/js/submitLead.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Open Graph / Twitter -->
@@ -130,7 +131,7 @@
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
-      <form id="applyForm" class="space-y-2 px-6 py-3">
+      <form id="applyForm" onsubmit="submitLead(event)" class="space-y-2 px-6 py-3">
         <input type="hidden" name="subject" value="New Engineering Admission Lead" />
 
         <div>
@@ -893,7 +894,7 @@
       </div>
 
       <!-- FORM -->
-      <form id="applyForm" class="px-6 py-3 space-y-2">
+      <form id="applyForm" onsubmit="submitLead(event)" class="px-6 py-3 space-y-2">
 
         <!-- AUTO FILLED -->
         <input type="hidden" id="streamInput" name="stream">
@@ -955,6 +956,7 @@
       </form>
     </div>
   </div>
+  <script src="../assete/js/submitLead.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
